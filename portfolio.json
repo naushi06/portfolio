@@ -1,0 +1,243 @@
+{
+  "profile": {
+    "full_name": "Naushifa Rasheed",
+    "brand_name": "Naushifa",
+    "title": "Computer Science Engineer | Embedded Systems, IoT & Robotics",
+    "tagline": "ECC @ IEEE SB CE Kallooppara · Computer Science Student at APJ Abdul Kalam Technological University",
+    "location": "Tiruvalla, Kerala, India",
+    "email": "naushifa06@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/naushifa-rasheed",
+    "github": "https://github.com/naushifa-rasheed",
+    "bio": "Enthusiastic and forward-thinking Computer Science student at College Of Engineering Kallooppara (APJ Abdul Kalam Technological University), with deep hands-on expertise in ESP32 Microcontrollers, Arduino IDE, embedded firmware, and autonomous robotics. Proven track record in collaborative engineering through consecutive internships at EVOLVE ROBOTICS and Genzee Technologies, paired with proactive leadership as ECC at IEEE SB CE Kallooppara. Passionate about bridging hardware intelligence with scalable modern software solutions.",
+    "avatar_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240' width='240' height='240'><defs><linearGradient id='avatarGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%234f46e5'/><stop offset='50%25' stop-color='%2306b6d4'/><stop offset='100%25' stop-color='%2310b981'/></linearGradient><linearGradient id='circleBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%231e293b'/><stop offset='100%25' stop-color='%230f172a'/></linearGradient></defs><circle cx='120' cy='120' r='115' fill='url(%23circleBg)' stroke='url(%23avatarGrad)' stroke-width='4'/><path d='M 60 70 L 85 70 L 95 80 L 145 80 L 155 70 L 180 70' stroke='rgba(6, 182, 212, 0.25)' stroke-width='2' fill='none'/><circle cx='60' cy='70' r='3.5' fill='%2306b6d4' opacity='0.6'/><circle cx='180' cy='70' r='3.5' fill='%2310b981' opacity='0.6'/><ellipse cx='120' cy='98' rx='36' ry='42' fill='%23334155' stroke='url(%23avatarGrad)' stroke-width='3'/><path d='M 84 100 C 84 56 156 56 156 100 C 156 130 144 148 120 148 C 96 148 84 130 84 100 Z' fill='url(%23avatarGrad)' opacity='0.95'/><ellipse cx='120' cy='104' rx='26' ry='30' fill='%23f8fafc'/><path d='M 62 205 C 65 160 92 148 120 148 C 148 148 175 160 178 205' fill='%231e293b' stroke='url(%23avatarGrad)' stroke-width='3.5'/><g transform='translate(145, 175)'><rect x='0' y='0' width='70' height='26' rx='13' fill='%230f172a' stroke='%2310b981' stroke-width='2'/><circle cx='13' cy='13' r='5' fill='%2310b981'/><text x='26' y='17' fill='%23f8fafc' font-family='sans-serif' font-size='10' font-weight='700'>ESP32</text></g></svg>",
+    "availability_status": "Open to Internships, Technical Collaborations & Engineering Roles",
+    "resume_url": "#resume-section"
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "role": "ECC",
+      "company": "IEEE SB CE KALLOOPPARA",
+      "period": "March 2026 - Present (9 months)",
+      "location": "Kallooppara, Kerala, India",
+      "description": "Executive Committee member leading technical communications, coordinating university workshops, technical symposiums, and engineering initiatives for the student branch community.",
+      "display_order": 1
+    },
+    {
+      "id": 2,
+      "role": "Intern",
+      "company": "EVOLVE ROBOTICS LLP",
+      "period": "June 2026 - June 2026 (1 month)",
+      "location": "Kochi, Kerala, India",
+      "description": "Conducted hands-on robotics engineering, sensor telemetry integration, and microcontroller firmware programming for autonomous robotic systems.",
+      "display_order": 2
+    },
+    {
+      "id": 3,
+      "role": "Intern",
+      "company": "Genzee Technologies LLP",
+      "period": "December 2025 - December 2025 (1 month)",
+      "location": "Kochi, Kerala, India",
+      "description": "Developed embedded firmware and edge device prototypes utilizing ESP32 microcontrollers and Arduino IDE for connected IoT architectures.",
+      "display_order": 3
+    },
+    {
+      "id": 4,
+      "role": "Intern",
+      "company": "Genzee Technologies LLP",
+      "period": "June 2025 - June 2025 (1 month)",
+      "location": "Kochi, Kerala, India",
+      "description": "Assisted in circuit design, hardware debugging, sensor interfacing (I2C/SPI), and testing industrial telemetry sensor prototypes.",
+      "display_order": 4
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "APJ Abdul Kalam Technological University (KTU), Thiruvananthapuram",
+      "degree": "Bachelor of Technology, Computer Science",
+      "period": "June 2024 - June 2028",
+      "location": "Thiruvananthapuram, Kerala, India",
+      "details": "Specialization in Computer Science & Engineering. Deep focus on Data Structures, Algorithms, Microprocessors, Embedded Firmware, and IoT Architectures.",
+      "display_order": 1
+    },
+    {
+      "id": 2,
+      "institution": "College Of Engineering Kallooppara - India",
+      "degree": "Computer Science & Engineering Studies",
+      "period": "2024",
+      "location": "Kallooppara, Kerala, India",
+      "details": "Active member and leader in IEEE Student Branch, Robotics Club, and collegiate technical initiatives.",
+      "display_order": 2
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "ESP32 Microcontrollers",
+      "category": "Microcontrollers & Hardware",
+      "proficiency": 96,
+      "is_top_skill": 1,
+      "display_order": 1
+    },
+    {
+      "id": 2,
+      "name": "Arduino IDE",
+      "category": "Development Tools",
+      "proficiency": 95,
+      "is_top_skill": 1,
+      "display_order": 2
+    },
+    {
+      "id": 3,
+      "name": "Arduino",
+      "category": "Microcontrollers & Hardware",
+      "proficiency": 94,
+      "is_top_skill": 1,
+      "display_order": 3
+    },
+    {
+      "id": 4,
+      "name": "Sensors Interfacing (I2C / SPI / UART)",
+      "category": "Microcontrollers & Hardware",
+      "proficiency": 90,
+      "is_top_skill": 0,
+      "display_order": 4
+    },
+    {
+      "id": 5,
+      "name": "Motor Drivers & Actuators",
+      "category": "Microcontrollers & Hardware",
+      "proficiency": 88,
+      "is_top_skill": 0,
+      "display_order": 5
+    },
+    {
+      "id": 6,
+      "name": "Embedded C / C++",
+      "category": "Programming Languages",
+      "proficiency": 90,
+      "is_top_skill": 0,
+      "display_order": 6
+    },
+    {
+      "id": 7,
+      "name": "Python",
+      "category": "Programming Languages",
+      "proficiency": 86,
+      "is_top_skill": 0,
+      "display_order": 7
+    },
+    {
+      "id": 8,
+      "name": "Data Structures & Algorithms",
+      "category": "Programming Languages",
+      "proficiency": 85,
+      "is_top_skill": 0,
+      "display_order": 8
+    },
+    {
+      "id": 9,
+      "name": "MQTT & HTTP REST APIs",
+      "category": "IoT & Networking",
+      "proficiency": 88,
+      "is_top_skill": 0,
+      "display_order": 9
+    },
+    {
+      "id": 10,
+      "name": "Wi-Fi & Bluetooth LE on ESP32",
+      "category": "IoT & Networking",
+      "proficiency": 92,
+      "is_top_skill": 0,
+      "display_order": 10
+    },
+    {
+      "id": 11,
+      "name": "Autonomous Robotics & Rover Navigation",
+      "category": "Robotics & Systems",
+      "proficiency": 86,
+      "is_top_skill": 0,
+      "display_order": 11
+    },
+    {
+      "id": 12,
+      "name": "Circuit Prototyping & Breadboarding",
+      "category": "Robotics & Systems",
+      "proficiency": 90,
+      "is_top_skill": 0,
+      "display_order": 12
+    },
+    {
+      "id": 13,
+      "name": "Git & GitHub",
+      "category": "Development Tools",
+      "proficiency": 88,
+      "is_top_skill": 0,
+      "display_order": 13
+    },
+    {
+      "id": 14,
+      "name": "Technical Communication (IEEE ECC)",
+      "category": "Leadership & Soft Skills",
+      "proficiency": 95,
+      "is_top_skill": 0,
+      "display_order": 14
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "ESP32 Cloud Telemetry & Environmental Monitor",
+      "description": "Low-power edge node leveraging ESP32 and FreeRTOS to publish real-time temperature, humidity, and atmospheric telemetry over secure MQTT.",
+      "long_description": "Engineered with deep-sleep cycling to optimize battery endurance, automatic Wi-Fi reconnect state machines, and dynamic payload serialization. Features full integration with cloud monitoring dashboards.",
+      "category": "Embedded & IoT",
+      "tags": "ESP32, FreeRTOS, MQTT, Arduino IDE, C++",
+      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='100' y='50' width='200' height='140' rx='12' fill='%231e293b' stroke='%2306b6d4' stroke-width='2'/><text x='200' y='110' fill='%2338bdf8' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>ESP32 TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>WiFi + BLE + MQTT</text><circle cx='140' cy='160' r='6' fill='%2310b981'/><circle cx='165' cy='160' r='6' fill='%2306b6d4'/><circle cx='190' cy='160' r='6' fill='%23f59e0b'/></svg>",
+      "github_url": "https://github.com/naushifa-rasheed/esp32-telemetry-node",
+      "demo_url": "https://github.com/naushifa-rasheed/esp32-telemetry-node",
+      "featured": 1,
+      "display_order": 1
+    },
+    {
+      "id": 2,
+      "title": "Autonomous Obstacle-Avoiding & Path Rover",
+      "description": "Robotic vehicle driven by microcontroller firmware, utilizing ultrasonic sensor arrays and PID motor speed control to autonomously traverse environments.",
+      "long_description": "Developed as part of robotics engineering at Evolve Robotics. Implemented low-latency interrupt handling, dynamic obstacle clearance detection, and PWM motor driver tuning.",
+      "category": "Robotics",
+      "tags": "Arduino, Robotics, PID Control, Sensors, C++",
+      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='120' y='60' width='160' height='120' rx='10' fill='%231e293b' stroke='%23818cf8' stroke-width='2'/><circle cx='165' cy='100' r='14' fill='%23e2e8f0'/><circle cx='235' cy='100' r='14' fill='%23e2e8f0'/><text x='200' y='150' fill='%23818cf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>AUTONOMOUS ROVER</text></svg>",
+      "github_url": "https://github.com/naushifa-rasheed/autonomous-rover",
+      "demo_url": "https://github.com/naushifa-rasheed/autonomous-rover",
+      "featured": 1,
+      "display_order": 2
+    },
+    {
+      "id": 3,
+      "title": "Industrial Telemetry & Equipment Health Monitor",
+      "description": "Edge IoT telemetry unit for predictive vibration and temperature anomaly detection on electric machinery.",
+      "long_description": "Designed and prototyped during firmware internship at Genzee Technologies. Interfaces multi-axis accelerometer and thermal sensors via high-speed I2C bus with alert threshold interrupts.",
+      "category": "Embedded & IoT",
+      "tags": "ESP32, I2C Telemetry, Arduino IDE, IoT Cloud",
+      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='110' y='55' width='180' height='130' rx='12' fill='%231e293b' stroke='%2310b981' stroke-width='2'/><text x='200' y='110' fill='%2310b981' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>INDUSTRIAL TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>I2C Vibration & Temp</text></svg>",
+      "github_url": "https://github.com/naushifa-rasheed/industrial-health-monitor",
+      "demo_url": "https://github.com/naushifa-rasheed/industrial-health-monitor",
+      "featured": 1,
+      "display_order": 3
+    },
+    {
+      "id": 4,
+      "title": "IEEE SB CEK Technical Communications Portal",
+      "description": "Interactive community hub for IEEE SB CE Kallooppara students to register for workshops, access seminar resources, and coordinate branch activities.",
+      "long_description": "Initiated and maintained as ECC of IEEE SB CE Kallooppara to centralize announcements, track participant check-ins, and publish engineering newsletters.",
+      "category": "Web & Systems",
+      "tags": "JavaScript, JSON APIs, HTML5/CSS3, IEEE SB",
+      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230a192f'/><polygon points='200,60 260,120 200,180 140,120' fill='%2300629b' stroke='%2338bdf8' stroke-width='2.5'/><text x='200' y='125' fill='%23fff' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IEEE CEK</text></svg>",
+      "github_url": "https://github.com/naushifa-rasheed/ieee-cek-hub",
+      "demo_url": "https://github.com/naushifa-rasheed/ieee-cek-hub",
+      "featured": 1,
+      "display_order": 4
+    }
+  ],
+  "messages": []
+}
