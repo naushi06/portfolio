@@ -11,7 +11,7 @@
     "full_name": "Naushifa Rasheed",
     "brand_name": "Naushifa",
     "title": "Computer Science Engineer | Embedded Systems, IoT & Robotics",
-    "tagline": "ECC @ IEEE SB CE Kallooppara \u00b7 Computer Science Student at APJ Abdul Kalam Technological University",
+    "tagline": "ECC @ IEEE SB CE Kallooppara · Computer Science Student at APJ Abdul Kalam Technological University",
     "location": "Tiruvalla, Kerala, India",
     "email": "naushifa06@gmail.com",
     "linkedin": "https://www.linkedin.com/in/naushifa-rasheed",
@@ -21,13 +21,13 @@
     "avatar_arrangement": "circle",
     "badges": {
       "badge_top": {
-        "icon": "\u26a1",
+        "icon": "⚡",
         "title": "ESP32 & Arduino",
         "subtitle": "Hardware & Firmware",
         "enabled": true
       },
       "badge_bottom": {
-        "icon": "\ud83e\uddbe",
+        "icon": "🦾",
         "title": "ECC",
         "subtitle": "IEEE SB CE Kallooppara",
         "enabled": true
