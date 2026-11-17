@@ -1,114 +1,53 @@
-# Naushifa Rasheed — Professional Engineering Portfolio & Admin Portal
+# Naushifa Rasheed — Engineering Portfolio & Auto-Synced ATS Resume
 
-A professional, high-performance web portfolio and administration portal built for **Naushifa Rasheed** (Computer Science Engineer | IoT & Robotics Specialist | ECC @ IEEE SB CE Kallooppara).
+A zero-backend, single-page web portfolio and encrypted administration portal built for **Naushifa Rasheed** (Computer Science Engineer | Embedded Systems, IoT & Robotics | ECC @ IEEE SB CE Kallooppara).
 
-Includes a compiled **vector PDF resume** matching the certified credentials, dynamic project management, and a **password-secured admin control center** to customize avatar, bio description, projects, work experience, skills, and receive visitor inquiries.
-
----
-
-## 🌟 Key Highlights & Features
-
-### 1. 💼 Public Portfolio Front-End
-- **Modern Responsive Design**: Sleek cyber-engineering aesthetic with dark & light theme modes, glassmorphic cards, smooth scrolling, and mobile drawer.
-- **Hero & Avatar Showcase**: Dynamic headline, animated status pill (*"Open to Internships & Engineering Roles"*), animated circular avatar with glowing aura, and quick-download resume button.
-- **Attached Resume Viewer**:
-  - Direct 1-click download of `naushifa_rasheed_resume.pdf`.
-  - In-browser interactive 2-column resume preview matching the uploaded PDF.
-  - Print-to-paper / Save-as-PDF styling.
-- **Skills Matrix**:
-  - Highlighting **ESP32 Microcontrollers**, **Arduino IDE**, and **Arduino** from official credentials.
-  - Visual proficiency bars and categorized skill filters (Microcontrollers, Embedded C/C++, Robotics, IoT Protocols).
-- **Projects Showcase**:
-  - Categorized filters (*Embedded & IoT*, *Robotics*, *Web & Systems*).
-  - Detailed modal cards with tech tags, live demo links, and GitHub repository links.
-- **Career Timeline**:
-  - Dual-column vertical timeline for **Professional Experience** (IEEE SB CE Kallooppara, EVOLVE ROBOTICS LLP, Genzee Technologies LLP) and **Education** (APJ Abdul Kalam Technological University - KTU & College Of Engineering Kallooppara).
-- **Interactive Contact Form**:
-  - Direct contact information (Phone, Email, LinkedIn, Location).
-  - Visitors can submit inquiries that are stored directly in the admin SQLite database.
+Everything is powered by static HTML5/CSS3/JavaScript and a single `portfolio.json` datastore—deployable directly on **GitHub Pages**, **Vercel**, or **Netlify** with live GitHub API cloud sync and an **automatic, print-ready ATS resume builder**.
 
 ---
 
-### 2. 🔐 Secured Admin Portal (`/admin`)
-- **Password-Secured Authentication**:
-  - Uses standard **PBKDF2 with SHA-256 (100,000 iterations)** and cryptographically random unique salts.
-  - Secure session token lifecycle with HttpOnly cookies and Bearer tokens.
-  - Built-in **Change Password** dialog to update credentials at any time.
-- **Avatar & Photo Manager**:
-  - Upload custom photographs (JPG, PNG, WebP) with instant preview.
-  - Preset avatar switcher (including custom high-res SVG engineer avatar).
-- **Bio & Description Editor**:
-  - Edit full name, professional headline, affiliation tagline, detailed bio description, location, and status.
-- **Projects Management (CRUD)**:
-  - Add new projects with title, category, tags, description, GitHub link, demo link, and featured toggle.
-  - Edit existing projects.
-  - Delete projects.
-- **Experience & Education Management (CRUD)**:
-  - Add/Edit/Delete work experiences and internships.
-  - Add/Edit/Delete degrees and academic institutions.
-- **Skills Management (CRUD)**:
-  - Add/Edit/Delete skills with proficiency percentages and "Top Skill" homepage highlight.
-- **Resume PDF Regeneration**:
-  - 1-click button to recompile `naushifa_rasheed_resume.pdf` on the fly.
-- **Contact Inquiries Inbox**:
-  - Read incoming messages submitted by recruiters and collaborators.
+## Key Features
+
+### 1. Automatic Live-Synced Resume & Clean PDF Export
+- **100% Data-Driven**: Every detail in the resume—full name, headline, contact links, executive summary, **all technical skills** (grouped by category with top skills highlighted), **all positions & internships**, **all education records**, and **featured engineering projects**—is compiled dynamically from the portfolio state (`portfolio.json` / Admin Portal).
+- **Real-Time Updates**: Whenever you add, edit, or delete any profile field, skill, position, education entry, or project in the Admin Portal, the resume updates immediately.
+- **Zero-Blank-Page PDF Export**: Clicking **Print / Save as PDF** applies dedicated `@media print` A4 page rules that collapse all non-resume sections from the document flow, producing a crisp, clean 1–2 page ATS-friendly PDF with no extra blank pages.
+
+### 2. Public Cyber-Engineering Portfolio
+- **Dark & Light Themes**: Seamless theme toggle saved to `localStorage`.
+- **Customizable Hero Avatar & Multi-Photo Grid**: Supports 5 layout arrangements (*Hologram Circle*, *Rounded Tech Card*, *Cyber Hexagon*, *Dual Staggered Grid*, and *2×2 Quad Tech Grid*) plus customizable floating status badges.
+- **Filterable Skills & Projects**: Interactive category pills for *Microcontrollers & Hardware*, *Programming Languages*, *IoT & Networking*, *Robotics & Systems*, and *Web & Systems*.
+- **Career & Academic Timelines**: Chronological timelines for **Positions & Experience** and **Education**.
+- **Contact Form**: Captures visitor inquiries directly into the Admin Portal inbox.
+
+### 3. SSH-Grade Secured Admin Portal (`#admin`)
+- **Zero-Plaintext Authentication**: Credentials are verified client-side using the Web Crypto API with **PBKDF2-HMAC-SHA256 (100,000 iterations)** and unique cryptographic salts. Always prompts for credentials upon entering `#admin`.
+- **Full CRUD Management**: Edit personal profile & avatar photos (file upload to Base64 or image URL), projects, positions/experience, education records, technical skills, and admin username/password.
+- **GitHub Cloud Sync (Fine-Grained PAT)**: Connect a GitHub **Fine-Grained Personal Access Token** (`github_pat_...`) with `Contents: Read and write` permission to push `portfolio.json` updates directly to your repository so changes go live globally.
 
 ---
 
-## 🚀 How to Run the Application
+## Project Structure
 
-The application is built using **Python 3 standard library** with zero external pip dependencies.
+```text
+├── index.html        # Complete Public Portfolio, Live ATS Resume & Admin Portal
+├── portfolio.json    # Structured JSON datastore (auth hash, profile, skills, experience, education, projects)
+└── README.md         # Documentation
+```
 
-### 1. Launch the Server
-Run the startup script:
+---
+
+## Quick Start & Deployment
+
+### Local Preview
+Because `index.html` fetches `portfolio.json` over HTTP, serve the directory using any static server:
+
 ```bash
-./run.sh
+python3 -m http.server 8000
 ```
-Or directly:
-```bash
-python3 app.py
-```
+Then open `http://localhost:8000` in your browser.
 
-### 2. Access the Application
-- **Public Portfolio**: [http://localhost:8000/](http://localhost:8000/) *(or port 8001 if 8000 is occupied)*
-- **Secured Admin Portal**: [http://localhost:8000/admin](http://localhost:8000/admin)
-- **Direct Resume PDF**: [http://localhost:8000/resume](http://localhost:8000/resume)
-
----
-
-## 🔑 Default Admin Credentials
-
-| Field | Value |
-|---|---|
-| **Portal URL** | `http://localhost:8000/admin` |
-| **Username** | `admin` |
-| **Password** | `adminPassword123!` |
-
-> **Security Note**: Once logged in, click **"🔑 Change Password"** in the sidebar to set your own custom secure password.
-
----
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── app.py                     # Python 3 Threading HTTP Server & REST API
-├── database.py                # SQLite3 schema, migrations, PBKDF2 auth & helpers
-├── generate_resume.py         # Pure Python PDF 1.4 vector resume compiler
-├── portfolio.db               # SQLite database with all profile, project & message data
-├── run.sh                     # Launch executable script
-├── static/
-│   ├── css/
-│   │   ├── style.css          # Public portfolio styling (dark/light, responsive)
-│   │   └── admin.css          # Admin portal styling
-│   ├── js/
-│   │   ├── main.js            # Frontend interactivity, dynamic API hydration
-│   │   └── admin.js           # Admin portal dashboard, CRUD & upload handlers
-│   ├── uploads/               # Stored uploaded avatars & project images
-│   ├── default-avatar.svg     # Clean vector avatar for Naushifa Rasheed
-│   └── naushifa_rasheed_resume.pdf # Compiled vector PDF resume
-├── templates/
-│   ├── index.html             # Public portfolio HTML
-│   └── admin.html             # Secured Admin portal HTML
-└── README.md                  # Documentation
-```
+### Deploy on GitHub Pages
+1. Push `index.html`, `portfolio.json`, and `README.md` to your GitHub repository.
+2. Go to **Settings → Pages** and select your branch (e.g., `main` / `/root`).
+3. Once live, click **Admin** in the navigation bar (or append `#admin` to your URL), log in, and open the **GitHub Cloud Sync** tab to link your Fine-Grained Personal Access Token (`github_pat_...`) for 1-click live publishing.

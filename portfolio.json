@@ -1,15 +1,64 @@
 {
+  "auth": {
+    "username": "admin",
+    "ssh_salt": "a84f3e219b7c0d456182e0f391c784ab",
+    "ssh_hash": "c92bf3ec4f7bc8e8e04bba65fd2e3288baf2bd7eeb11c3f7c5eb5a50f9879429",
+    "ssh_fingerprint": "SHA256:c92bf3ec4f7bc8e8e04bba65fd2e3288baf2bd7eeb11c3f7c5eb5a50f9879429",
+    "cipher": "SSH-v2 / PBKDF2-HMAC-SHA256 (100,000 rounds)",
+    "security_level": "SSH-Grade Zero-Plaintext Storage"
+  },
   "profile": {
     "full_name": "Naushifa Rasheed",
     "brand_name": "Naushifa",
     "title": "Computer Science Engineer | Embedded Systems, IoT & Robotics",
-    "tagline": "ECC @ IEEE SB CE Kallooppara · Computer Science Student at APJ Abdul Kalam Technological University",
+    "tagline": "ECC @ IEEE SB CE Kallooppara \u00b7 Computer Science Student at APJ Abdul Kalam Technological University",
     "location": "Tiruvalla, Kerala, India",
     "email": "naushifa06@gmail.com",
     "linkedin": "https://www.linkedin.com/in/naushifa-rasheed",
     "github": "https://github.com/naushifa-rasheed",
     "bio": "Enthusiastic and forward-thinking Computer Science student at College Of Engineering Kallooppara (APJ Abdul Kalam Technological University), with deep hands-on expertise in ESP32 Microcontrollers, Arduino IDE, embedded firmware, and autonomous robotics. Proven track record in collaborative engineering through consecutive internships at EVOLVE ROBOTICS and Genzee Technologies, paired with proactive leadership as ECC at IEEE SB CE Kallooppara. Passionate about bridging hardware intelligence with scalable modern software solutions.",
     "avatar_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240' width='240' height='240'><defs><linearGradient id='avatarGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%234f46e5'/><stop offset='50%25' stop-color='%2306b6d4'/><stop offset='100%25' stop-color='%2310b981'/></linearGradient><linearGradient id='circleBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%231e293b'/><stop offset='100%25' stop-color='%230f172a'/></linearGradient></defs><circle cx='120' cy='120' r='115' fill='url(%23circleBg)' stroke='url(%23avatarGrad)' stroke-width='4'/><path d='M 60 70 L 85 70 L 95 80 L 145 80 L 155 70 L 180 70' stroke='rgba(6, 182, 212, 0.25)' stroke-width='2' fill='none'/><circle cx='60' cy='70' r='3.5' fill='%2306b6d4' opacity='0.6'/><circle cx='180' cy='70' r='3.5' fill='%2310b981' opacity='0.6'/><ellipse cx='120' cy='98' rx='36' ry='42' fill='%23334155' stroke='url(%23avatarGrad)' stroke-width='3'/><path d='M 84 100 C 84 56 156 56 156 100 C 156 130 144 148 120 148 C 96 148 84 130 84 100 Z' fill='url(%23avatarGrad)' opacity='0.95'/><ellipse cx='120' cy='104' rx='26' ry='30' fill='%23f8fafc'/><path d='M 62 205 C 65 160 92 148 120 148 C 148 148 175 160 178 205' fill='%231e293b' stroke='url(%23avatarGrad)' stroke-width='3.5'/><g transform='translate(145, 175)'><rect x='0' y='0' width='70' height='26' rx='13' fill='%230f172a' stroke='%2310b981' stroke-width='2'/><circle cx='13' cy='13' r='5' fill='%2310b981'/><text x='26' y='17' fill='%23f8fafc' font-family='sans-serif' font-size='10' font-weight='700'>ESP32</text></g></svg>",
+    "avatar_arrangement": "circle",
+    "badges": {
+      "badge_top": {
+        "icon": "\u26a1",
+        "title": "ESP32 & Arduino",
+        "subtitle": "Hardware & Firmware",
+        "enabled": true
+      },
+      "badge_bottom": {
+        "icon": "\ud83e\uddbe",
+        "title": "ECC",
+        "subtitle": "IEEE SB CE Kallooppara",
+        "enabled": true
+      }
+    },
+    "gallery": [
+      {
+        "id": 1,
+        "title": "Engineering Portrait",
+        "tag": "Primary Avatar",
+        "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240' width='240' height='240'><defs><linearGradient id='avatarGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%234f46e5'/><stop offset='50%25' stop-color='%2306b6d4'/><stop offset='100%25' stop-color='%2310b981'/></linearGradient><linearGradient id='circleBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%231e293b'/><stop offset='100%25' stop-color='%230f172a'/></linearGradient></defs><circle cx='120' cy='120' r='115' fill='url(%23circleBg)' stroke='url(%23avatarGrad)' stroke-width='4'/><ellipse cx='120' cy='98' rx='36' ry='42' fill='%23334155' stroke='url(%23avatarGrad)' stroke-width='3'/><path d='M 84 100 C 84 56 156 56 156 100 C 156 130 144 148 120 148 C 96 148 84 130 84 100 Z' fill='url(%23avatarGrad)' opacity='0.95'/><ellipse cx='120' cy='104' rx='26' ry='30' fill='%23f8fafc'/><path d='M 62 205 C 65 160 92 148 120 148 C 148 148 175 160 178 205' fill='%231e293b' stroke='url(%23avatarGrad)' stroke-width='3.5'/></svg>"
+      },
+      {
+        "id": 2,
+        "title": "ESP32 IoT Telemetry",
+        "tag": "Firmware & Edge",
+        "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='100' y='50' width='200' height='140' rx='12' fill='%231e293b' stroke='%2306b6d4' stroke-width='2'/><text x='200' y='110' fill='%2338bdf8' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>ESP32 TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>WiFi + BLE + MQTT</text></svg>"
+      },
+      {
+        "id": 3,
+        "title": "Autonomous Rover Prototype",
+        "tag": "Evolve Robotics",
+        "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='120' y='60' width='160' height='120' rx='10' fill='%231e293b' stroke='%23818cf8' stroke-width='2'/><circle cx='165' cy='100' r='14' fill='%23e2e8f0'/><circle cx='235' cy='100' r='14' fill='%23e2e8f0'/><text x='200' y='150' fill='%23818cf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>AUTONOMOUS ROVER</text></svg>"
+      },
+      {
+        "id": 4,
+        "title": "IEEE SB CEK Communications",
+        "tag": "Leadership Hub",
+        "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230a192f'/><polygon points='200,60 260,120 200,180 140,120' fill='%2300629b' stroke='%2338bdf8' stroke-width='2.5'/><text x='200' y='125' fill='%23fff' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IEEE CEK</text></svg>"
+      }
+    ],
     "availability_status": "Open to Internships, Technical Collaborations & Engineering Roles",
     "resume_url": "#resume-section"
   },
