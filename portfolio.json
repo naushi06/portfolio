@@ -100,21 +100,11 @@
   "education": [
     {
       "id": 1,
-      "institution": "APJ Abdul Kalam Technological University (KTU), Thiruvananthapuram",
-      "degree": "Bachelor of Technology, Computer Science",
+      "institution": "College Of Engineering Kallooppara,Thiruvalla",
+      "degree": "Bachelor of Technology, Computer Science and engineering(KTU University)",
       "period": "June 2024 - June 2028",
-      "location": "Thiruvananthapuram, Kerala, India",
-      "details": "Specialization in Computer Science & Engineering. Deep focus on Data Structures, Algorithms, Microprocessors, Embedded Firmware, and IoT Architectures.",
-      "display_order": 1
-    },
-    {
-      "id": 2,
-      "institution": "College Of Engineering Kallooppara - India",
-      "degree": "Computer Science & Engineering Studies",
-      "period": "2024",
-      "location": "Kallooppara, Kerala, India",
-      "details": "Active member and leader in IEEE Student Branch, Robotics Club, and collegiate technical initiatives.",
-      "display_order": 2
+      "location": "Thiruvalla,Kerala, India",
+      "details": "Specialization in Computer Science & Engineering. Deep focus on Data Structures, Algorithms, Microprocessors, Embedded Firmware, and IoT Architectures."
     }
   ],
   "skills": [
