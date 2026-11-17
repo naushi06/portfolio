@@ -165,14 +165,6 @@
       "display_order": 9
     },
     {
-      "id": 10,
-      "name": "Wi-Fi & Bluetooth LE on ESP32",
-      "category": "IoT & Networking",
-      "proficiency": 92,
-      "is_top_skill": 0,
-      "display_order": 10
-    },
-    {
       "id": 11,
       "name": "Autonomous Robotics & Rover Navigation",
       "category": "Robotics & Systems",
