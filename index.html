@@ -2456,7 +2456,7 @@
                     GitHub Fine-Grained Personal Access Token
                     <span id="fgTokenBadge" style="margin-left: 8px; font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: var(--admin-cyan);">Starts with github_pat_</span>
                   </label>
-                  <input type="password" id="ghToken" class="admin-input" placeholder="github_pat_..." oninput="checkTokenFormat(event)">
+                  <input type="password" id="ghToken" class="admin-input" placeholder="github_pat_..." autocomplete="new-password" oninput="checkTokenFormat(event)">
                 </div>
               </div>
               <div style="display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap;">
@@ -2560,8 +2560,8 @@
         </div>
         <div class="form-grid-2">
           <div class="admin-form-group">
-            <label>GitHub URL</label>
-            <input type="url" id="mProjGithub" class="admin-input" placeholder="https://github.com/...">
+            <label>LinkedIn URL</label>
+            <input type="url" id="mProjLinkedin" class="admin-input" placeholder="https://www.linkedin.com/...">
           </div>
           <div class="admin-form-group">
             <label>Live Demo URL</label>
@@ -2830,7 +2830,7 @@
           category: "Embedded & IoT",
           tags: "ESP32, FreeRTOS, MQTT, Arduino IDE, C++",
           image_url: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='100' y='50' width='200' height='140' rx='12' fill='%231e293b' stroke='%2306b6d4' stroke-width='2'/><text x='200' y='110' fill='%2338bdf8' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>ESP32 TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>WiFi + BLE + MQTT</text><circle cx='140' cy='160' r='6' fill='%2310b981'/><circle cx='165' cy='160' r='6' fill='%2306b6d4'/><circle cx='190' cy='160' r='6' fill='%23f59e0b'/></svg>",
-          github_url: "https://github.com/naushifa-rasheed/esp32-telemetry-node",
+          linkedin_url: "https://www.linkedin.com/in/naushifa-rasheed",
           demo_url: "https://github.com/naushifa-rasheed/esp32-telemetry-node",
           featured: 1,
           display_order: 1
@@ -2843,7 +2843,7 @@
           category: "Robotics",
           tags: "Arduino, Robotics, PID Control, Sensors, C++",
           image_url: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='120' y='60' width='160' height='120' rx='10' fill='%231e293b' stroke='%23818cf8' stroke-width='2'/><circle cx='165' cy='100' r='14' fill='%23e2e8f0'/><circle cx='235' cy='100' r='14' fill='%23e2e8f0'/><text x='200' y='150' fill='%23818cf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>AUTONOMOUS ROVER</text></svg>",
-          github_url: "https://github.com/naushifa-rasheed/autonomous-rover",
+          linkedin_url: "https://www.linkedin.com/in/naushifa-rasheed",
           demo_url: "https://github.com/naushifa-rasheed/autonomous-rover",
           featured: 1,
           display_order: 2
@@ -2856,7 +2856,7 @@
           category: "Embedded & IoT",
           tags: "ESP32, I2C Telemetry, Arduino IDE, IoT Cloud",
           image_url: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='110' y='55' width='180' height='130' rx='12' fill='%231e293b' stroke='%2310b981' stroke-width='2'/><text x='200' y='110' fill='%2310b981' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>INDUSTRIAL TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>I2C Vibration & Temp</text></svg>",
-          github_url: "https://github.com/naushifa-rasheed/industrial-health-monitor",
+          linkedin_url: "https://www.linkedin.com/in/naushifa-rasheed",
           demo_url: "https://github.com/naushifa-rasheed/industrial-health-monitor",
           featured: 1,
           display_order: 3
@@ -2869,7 +2869,7 @@
           category: "Web & Systems",
           tags: "JavaScript, JSON APIs, HTML5/CSS3, IEEE SB",
           image_url: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230a192f'/><polygon points='200,60 260,120 200,180 140,120' fill='%2300629b' stroke='%2338bdf8' stroke-width='2.5'/><text x='200' y='125' fill='%23fff' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IEEE CEK</text></svg>",
-          github_url: "https://github.com/naushifa-rasheed/ieee-cek-hub",
+          linkedin_url: "https://www.linkedin.com/in/naushifa-rasheed",
           demo_url: "https://github.com/naushifa-rasheed/ieee-cek-hub",
           featured: 1,
           display_order: 4
@@ -3208,7 +3208,7 @@
               ${(proj.tags || '').split(',').filter(Boolean).map(t => `<span class="tag-chip">${escapeHTML(t.trim())}</span>`).join('')}
             </div>
             <div class="project-footer">
-              ${proj.github_url ? `<a href="${escapeHTML(proj.github_url)}" target="_blank" rel="noopener" class="project-link"><span>GitHub Repo ↗</span></a>` : '<span></span>'}
+              ${(proj.linkedin_url || proj.github_url) ? `<a href="${escapeHTML(proj.linkedin_url || proj.github_url)}" target="_blank" rel="noopener" class="project-link"><span>LinkedIn Post ↗</span></a>` : '<span></span>'}
               ${proj.demo_url ? `<a href="${escapeHTML(proj.demo_url)}" target="_blank" rel="noopener" class="btn-primary" style="padding: 6px 14px; font-size: 0.82rem;">Demo ↗</a>` : ''}
             </div>
           </div>
@@ -3654,7 +3654,7 @@
       document.getElementById('mProjTags').value = '';
       document.getElementById('mProjDesc').value = '';
       document.getElementById('mProjLongDesc').value = '';
-      document.getElementById('mProjGithub').value = '';
+      document.getElementById('mProjLinkedin').value = '';
       document.getElementById('mProjDemo').value = '';
       document.getElementById('mProjImage').value = DEFAULT_DATA.projects[0].image_url;
       document.getElementById('mProjFeatured').checked = true;
@@ -3671,7 +3671,7 @@
       document.getElementById('mProjTags').value = p.tags || '';
       document.getElementById('mProjDesc').value = p.description || '';
       document.getElementById('mProjLongDesc').value = p.long_description || '';
-      document.getElementById('mProjGithub').value = p.github_url || '';
+      document.getElementById('mProjLinkedin').value = p.linkedin_url || p.github_url || '';
       document.getElementById('mProjDemo').value = p.demo_url || '';
       document.getElementById('mProjImage').value = p.image_url || '';
       document.getElementById('mProjFeatured').checked = !!p.featured;
@@ -3691,7 +3691,7 @@
         tags: document.getElementById('mProjTags').value.trim(),
         description: document.getElementById('mProjDesc').value.trim(),
         long_description: document.getElementById('mProjLongDesc').value.trim(),
-        github_url: document.getElementById('mProjGithub').value.trim(),
+        linkedin_url: document.getElementById('mProjLinkedin').value.trim(),
         demo_url: document.getElementById('mProjDemo').value.trim(),
         image_url: document.getElementById('mProjImage').value.trim() || DEFAULT_DATA.projects[0].image_url,
         featured: document.getElementById('mProjFeatured').checked ? 1 : 0
