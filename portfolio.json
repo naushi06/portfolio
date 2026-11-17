@@ -158,11 +158,10 @@
     },
     {
       "id": 9,
-      "name": "MQTT & HTTP REST APIs",
+      "name": "API Integration",
       "category": "IoT & Networking",
       "proficiency": 88,
-      "is_top_skill": 0,
-      "display_order": 9
+      "is_top_skill": 0
     },
     {
       "id": 11,
