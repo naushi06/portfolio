@@ -234,20 +234,6 @@
       "display_order": 14
     }
   ],
-  "projects": [
-    {
-      "id": 4,
-      "title": "IEEE SB CEK Technical Communications Portal",
-      "description": "Interactive community hub for IEEE SB CE Kallooppara students to register for workshops, access seminar resources, and coordinate branch activities.",
-      "long_description": "Initiated and maintained as ECC of IEEE SB CE Kallooppara to centralize announcements, track participant check-ins, and publish engineering newsletters.",
-      "category": "Web & Systems",
-      "tags": "JavaScript, JSON APIs, HTML5/CSS3, IEEE SB",
-      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230a192f'/><polygon points='200,60 260,120 200,180 140,120' fill='%2300629b' stroke='%2338bdf8' stroke-width='2.5'/><text x='200' y='125' fill='%23fff' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IEEE CEK</text></svg>",
-      "github_url": "https://github.com/naushifa-rasheed/ieee-cek-hub",
-      "demo_url": "https://github.com/naushifa-rasheed/ieee-cek-hub",
-      "featured": 1,
-      "display_order": 4
-    }
-  ],
+  "projects": [],
   "messages": []
 }
