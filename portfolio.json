@@ -92,10 +92,9 @@
       "id": 4,
       "role": "Intern",
       "company": "Genzee Technologies LLP",
-      "period": "June 2025 - June 2025 (1 month)",
+      "period": "June 2025 - June 2025 (3 days)",
       "location": "Kochi, Kerala, India",
-      "description": "Assisted in circuit design, hardware debugging, sensor interfacing (I2C/SPI), and testing industrial telemetry sensor prototypes.",
-      "display_order": 4
+      "description": "Assisted in circuit design, hardware debugging, sensor interfacing (I2C/SPI), and testing industrial telemetry sensor prototypes."
     }
   ],
   "education": [
