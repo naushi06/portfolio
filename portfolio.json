@@ -133,14 +133,6 @@
       "display_order": 3
     },
     {
-      "id": 4,
-      "name": "Sensors Interfacing (I2C / SPI / UART)",
-      "category": "Microcontrollers & Hardware",
-      "proficiency": 90,
-      "is_top_skill": 0,
-      "display_order": 4
-    },
-    {
       "id": 6,
       "name": "Embedded C / C++",
       "category": "Programming Languages",
