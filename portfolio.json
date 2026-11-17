@@ -101,11 +101,10 @@
     {
       "id": 1,
       "institution": "APJ Abdul Kalam Technological University (KTU), Thiruvananthapuram",
-      "degree": "Bachelor of Technology, Computer Science",
+      "degree": "Bachelor of Technology, Computer Science and Engineering(",
       "period": "June 2024 - June 2028",
-      "location": "Thiruvananthapuram, Kerala, India",
-      "details": "Specialization in Computer Science & Engineering. Deep focus on Data Structures, Algorithms, Microprocessors, Embedded Firmware, and IoT Architectures.",
-      "display_order": 1
+      "location": "Thiruvalla, Kerala, India",
+      "details": "Specialization in Computer Science & Engineering. Deep focus on Data Structures, Algorithms, Microprocessors, Embedded Firmware, and IoT Architectures."
     }
   ],
   "skills": [
