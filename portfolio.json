@@ -141,14 +141,6 @@
       "display_order": 4
     },
     {
-      "id": 5,
-      "name": "Motor Drivers & Actuators",
-      "category": "Microcontrollers & Hardware",
-      "proficiency": 88,
-      "is_top_skill": 0,
-      "display_order": 5
-    },
-    {
       "id": 6,
       "name": "Embedded C / C++",
       "category": "Programming Languages",
