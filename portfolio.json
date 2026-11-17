@@ -84,10 +84,9 @@
       "id": 3,
       "role": "Intern",
       "company": "Genzee Technologies LLP",
-      "period": "December 2025 - December 2025 (1 month)",
+      "period": "December 2025 - December 2025 (3 days)",
       "location": "Kochi, Kerala, India",
-      "description": "Developed embedded firmware and edge device prototypes utilizing ESP32 microcontrollers and Arduino IDE for connected IoT architectures.",
-      "display_order": 3
+      "description": "Developed embedded firmware and edge device prototypes utilizing ESP32 microcontrollers and Arduino IDE for connected IoT architectures."
     },
     {
       "id": 4,
