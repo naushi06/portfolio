@@ -407,6 +407,7 @@
       min-height: 340px;
     }
 
+    /* Style 1: Circle (Default) */
     .avatar-arrangement-circle .avatar-backdrop-glow {
       position: absolute;
       width: 320px;
@@ -416,7 +417,6 @@
       z-index: 0;
       animation: rotateGlow 15s linear infinite;
     }
-
     @keyframes rotateGlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
     .avatar-arrangement-circle .avatar-frame {
@@ -437,13 +437,13 @@
       background: var(--bg-surface);
       overflow: hidden;
     }
-
     .avatar-arrangement-circle .avatar-img-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
+    /* Style 2: Rounded Tech Card */
     .avatar-arrangement-card .avatar-frame {
       width: 290px;
       height: 320px;
@@ -454,7 +454,6 @@
       position: relative;
       z-index: 1;
     }
-
     .avatar-arrangement-card .avatar-img-container {
       width: 100%;
       height: 100%;
@@ -462,13 +461,13 @@
       background: var(--bg-surface);
       overflow: hidden;
     }
-
     .avatar-arrangement-card .avatar-img-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
+    /* Style 3: Cyber Hexagon */
     .avatar-arrangement-hexagonal .avatar-frame {
       width: 280px;
       height: 300px;
@@ -482,7 +481,6 @@
       align-items: center;
       justify-content: center;
     }
-
     .avatar-arrangement-hexagonal .avatar-img-container {
       width: 96%;
       height: 96%;
@@ -490,19 +488,18 @@
       background: var(--bg-surface);
       overflow: hidden;
     }
-
     .avatar-arrangement-hexagonal .avatar-img-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
+    /* Style 4: Dual Staggered Grid */
     .avatar-arrangement-dual {
       display: flex;
       gap: 16px;
       align-items: center;
     }
-
     .avatar-arrangement-dual .dual-main-img {
       width: 210px;
       height: 250px;
@@ -511,7 +508,6 @@
       overflow: hidden;
       box-shadow: var(--shadow-md);
     }
-
     .avatar-arrangement-dual .dual-sub-img {
       width: 150px;
       height: 190px;
@@ -521,9 +517,9 @@
       box-shadow: var(--shadow-md);
       margin-top: 30px;
     }
-
     .avatar-arrangement-dual img { width: 100%; height: 100%; object-fit: cover; }
 
+    /* Style 5: Quad Tech Gallery Grid */
     .avatar-arrangement-grid {
       display: grid;
       grid-template-columns: 140px 140px;
@@ -532,7 +528,6 @@
       position: relative;
       z-index: 1;
     }
-
     .avatar-arrangement-grid .grid-photo-item {
       border-radius: var(--radius-md);
       border: 2px solid var(--border-color);
@@ -542,15 +537,12 @@
       box-shadow: var(--shadow-sm);
       transition: var(--transition);
     }
-
     .avatar-arrangement-grid .grid-photo-item:hover {
       border-color: var(--primary);
       transform: scale(1.04);
       z-index: 2;
     }
-
     .avatar-arrangement-grid img { width: 100%; height: 100%; object-fit: cover; }
-
     .avatar-arrangement-grid .grid-item-badge {
       position: absolute;
       bottom: 4px;
@@ -579,7 +571,7 @@
 
     .badge-top-left { top: 10px; left: -20px; }
     .badge-bottom-right { bottom: 10px; right: -20px; }
-    .badge-icon { font-size: 1.3rem; }
+    .badge-icon { font-size: 1.4rem; }
     .badge-text strong { display: block; font-size: 0.85rem; }
     .badge-text span { font-size: 0.75rem; color: var(--text-muted); }
 
@@ -862,9 +854,7 @@
     .timeline-loc { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 12px; }
     .timeline-desc { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
 
-    /* ==========================================================================
-       RESUME SECTION & ATS SHEET STYLES
-       ========================================================================== */
+    /* Resume Section */
     .resume-box {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -873,7 +863,7 @@
       box-shadow: var(--shadow-md);
     }
 
-    .resume-toolbar {
+    .resume-controls {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -889,93 +879,44 @@
       padding: 36px 44px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
       font-size: 0.88rem;
-      line-height: 1.48;
+      line-height: 1.5;
       max-width: 850px;
       margin: 0 auto;
     }
 
     .res-header {
       border-bottom: 2px solid #0284c7;
-      padding-bottom: 12px;
-      margin-bottom: 14px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
     }
 
-    .res-name { font-size: 1.85rem; font-weight: 800; color: #0f172a; line-height: 1.2; }
-    .res-sub { color: #0284c7; font-weight: 600; font-size: 0.95rem; margin-top: 3px; }
+    .res-name { font-size: 1.95rem; font-weight: 800; color: #0f172a; line-height: 1.15; }
+    .res-sub { color: #0284c7; font-weight: 600; font-size: 0.96rem; margin-top: 4px; }
     .res-contacts { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: #475569; margin-top: 8px; }
     .res-contacts a { color: #0f172a; text-decoration: none; font-weight: 500; }
-
-    .res-summary {
-      font-size: 0.82rem;
-      color: #334155;
-      margin-bottom: 14px;
-      line-height: 1.5;
-    }
-
     .res-sec-title {
-      font-size: 0.85rem;
+      font-size: 0.86rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: #0284c7;
       font-weight: 800;
       border-bottom: 1px solid #cbd5e1;
       padding-bottom: 3px;
-      margin: 14px 0 8px;
-      break-after: avoid;
+      margin: 16px 0 9px;
       page-break-after: avoid;
+      break-after: avoid;
     }
-
-    .res-skills-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      margin-bottom: 12px;
-      font-size: 0.82rem;
-      color: #1e293b;
-    }
-
-    .res-skill-row {
-      line-height: 1.45;
-    }
-
-    .res-skill-cat-label {
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    .res-entry-item {
-      margin-bottom: 10px;
-      break-inside: avoid;
+    .res-entry {
+      margin-bottom: 11px;
       page-break-inside: avoid;
+      break-inside: avoid;
     }
-
-    .res-entry-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-weight: 700;
-      color: #0f172a;
-      font-size: 0.86rem;
-      gap: 10px;
-    }
-
-    .res-entry-period {
-      color: #0284c7;
-      font-size: 0.78rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .res-entry-meta {
-      font-size: 0.76rem;
-      color: #64748b;
-      margin-bottom: 2px;
-    }
-
-    .res-entry-desc {
-      font-size: 0.81rem;
-      color: #334155;
-      line-height: 1.45;
+    .res-skill-group {
+      margin-bottom: 6px;
+      font-size: 0.83rem;
+      color: #1e293b;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
     /* Contact Section */
@@ -1032,7 +973,6 @@
       font-size: 0.95rem;
       transition: var(--transition);
     }
-
     .form-input:focus, .form-textarea:focus {
       outline: none;
       border-color: var(--primary);
@@ -1091,6 +1031,7 @@
     #publicPortfolioView { display: block; }
     #adminPortalView { display: none; }
 
+    /* Auth / Login Screen */
     .auth-wrapper {
       min-height: 100vh;
       display: flex;
@@ -1124,7 +1065,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin: 0 auto 14px;
       box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
     }
@@ -1176,6 +1117,7 @@
 
     .auth-btn:hover { background: var(--admin-green); }
 
+    /* Admin Layout & Sidebar */
     .admin-layout {
       display: flex;
       min-height: 100vh;
@@ -1280,6 +1222,7 @@
     .sidebar-action-btn:hover { background: var(--admin-card); color: #fff; border-color: var(--admin-border); }
     .logout-btn:hover { color: var(--danger); border-color: rgba(248, 81, 73, 0.3); }
 
+    /* Admin Workspace */
     .admin-workspace {
       flex-grow: 1;
       padding: 36px 44px;
@@ -1301,7 +1244,6 @@
 
     .tab-content-panel { display: none; }
     .tab-content-panel.active { display: block; animation: fadeIn 0.25s ease; }
-
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
     .admin-card {
@@ -1352,6 +1294,7 @@
       box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
     }
 
+    /* Arrangement Radio Selector */
     .arrangement-selector-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -1374,10 +1317,10 @@
       border-color: var(--admin-green);
       background: rgba(46, 160, 67, 0.1);
     }
-
     .arrangement-option input { display: none; }
     .arrangement-option strong { display: block; font-size: 0.85rem; margin-top: 4px; }
 
+    /* Avatar Editor Box */
     .avatar-editor-box {
       display: flex;
       gap: 28px;
@@ -1445,6 +1388,7 @@
 
     .btn-danger-ghost:hover { background: rgba(248, 81, 73, 0.1); }
 
+    /* Admin Table */
     .admin-table-wrap {
       overflow-x: auto;
       border-radius: var(--radius-sm);
@@ -1482,9 +1426,9 @@
       font-size: 0.75rem;
       font-weight: 600;
     }
-
     .badge-cyan { background: rgba(56, 189, 248, 0.15); color: var(--admin-cyan); }
     .badge-green { background: rgba(46, 160, 67, 0.15); color: var(--admin-green); }
+
     .table-actions-cell { display: flex; gap: 8px; }
 
     /* Modals */
@@ -1564,13 +1508,12 @@
       gap: 10px;
       animation: slideIn 0.2s ease;
     }
-
     @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
     .admin-toast.success { border-left: 4px solid var(--admin-green); }
     .admin-toast.error { border-left: 4px solid var(--danger); }
 
     /* ==========================================================================
-       3. CLEAN ATS PRINT / PDF EXPORT STYLES (Eliminates all blank pages!)
+       3. CLEAN SINGLE/MULTI-PAGE PRINT & SAVE AS PDF STYLES (ZERO BLANK PAGES)
        ========================================================================== */
     @page {
       size: A4 portrait;
@@ -1583,12 +1526,18 @@
         color: #0f172a !important;
         height: auto !important;
         min-height: 0 !important;
+        overflow: visible !important;
         margin: 0 !important;
         padding: 0 !important;
-        overflow: visible !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
-      /* Completely collapse all non-resume elements from document flow */
+      /* Completely collapse all non-resume sections so they take ZERO page height */
+      #adminPortalView,
+      #adminPortalView *,
+      .admin-modal-overlay,
+      .admin-toast-container,
       .bg-ambient,
       .navbar,
       #hero,
@@ -1599,11 +1548,8 @@
       #education,
       #contact,
       .footer,
-      #adminPortalView,
-      .admin-modal-overlay,
-      .admin-toast-container,
       #resume-section .section-header,
-      .resume-toolbar {
+      .resume-controls {
         display: none !important;
       }
 
@@ -1613,12 +1559,12 @@
 
       #resume-section {
         display: block !important;
+        background: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
-        background: #ffffff !important;
       }
 
-      #resume-section .container {
+      #resume-section > .container {
         max-width: 100% !important;
         width: 100% !important;
         padding: 0 !important;
@@ -1638,41 +1584,31 @@
         position: static !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 !important;
         margin: 0 !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
+        padding: 0 !important;
         background: #ffffff !important;
         color: #0f172a !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
         font-size: 9.5pt !important;
-        line-height: 1.4 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        line-height: 1.45 !important;
       }
 
       .res-header {
-        border-bottom: 1.5pt solid #0284c7 !important;
-        padding-bottom: 8pt !important;
-        margin-bottom: 10pt !important;
+        padding-bottom: 10px !important;
+        margin-bottom: 12px !important;
       }
 
-      .res-name { font-size: 18pt !important; }
-      .res-sub { font-size: 10pt !important; }
-      .res-contacts { font-size: 8.5pt !important; margin-top: 5pt !important; }
-      .res-summary { font-size: 8.8pt !important; margin-bottom: 10pt !important; }
+      .res-name {
+        font-size: 18pt !important;
+      }
 
       .res-sec-title {
-        font-size: 9.5pt !important;
-        margin: 10pt 0 6pt !important;
-        border-bottom: 0.75pt solid #cbd5e1 !important;
-        break-after: avoid;
-        page-break-after: avoid;
+        margin: 12px 0 7px !important;
       }
 
-      .res-entry-item,
-      .res-skill-row {
-        break-inside: avoid;
-        page-break-inside: avoid;
+      .res-entry {
+        margin-bottom: 8px !important;
       }
     }
 
@@ -1682,11 +1618,11 @@
       .admin-sidebar { width: 100%; height: auto; position: relative; }
       .admin-workspace { padding: 20px; }
       .form-grid-2, .form-grid-3 { grid-template-columns: 1fr; }
-      .resume-sheet-preview { padding: 22px 20px; }
     }
   </style>
 </head>
 <body>
+
   <!-- ========================================================================
        VIEW 1: PUBLIC PORTFOLIO
        ======================================================================== -->
@@ -1706,6 +1642,7 @@
           <div class="nav-logo-badge">NR</div>
           <span id="navBrandName">Naushifa</span>
         </a>
+
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -1714,6 +1651,7 @@
           <li><a href="#resume-section" class="nav-link">Resume</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
         <div class="nav-actions">
           <button id="themeToggle" class="theme-toggle-btn" title="Toggle Theme">☀️</button>
           <a href="#resume-section" class="nav-resume-btn">
@@ -1748,15 +1686,15 @@
               <span>📍</span> <span id="pubLocation">Tiruvalla, Kerala, India</span>
             </div>
             <div class="meta-item">
-              <span>🎓</span> <span>KTU B.Tech CS (2024 – 2028)</span>
+              <span>🎓</span> <span id="pubHeroEduMeta">KTU B.Tech CS (2024 – 2028)</span>
             </div>
             <div class="meta-item">
-              <span>⚡</span> <span>ECC @ IEEE SB CEK</span>
+              <span>⚡</span> <span id="pubHeroRoleMeta">ECC @ IEEE SB CEK</span>
             </div>
           </div>
           <div class="hero-actions">
             <a href="#resume-section" class="btn-primary">
-              <span>📄 View & Download Resume</span>
+              <span>📄 View Official Resume</span>
             </a>
             <a href="#projects" class="btn-outline">
               <span>View Projects</span>
@@ -1781,11 +1719,12 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Profile Overview</span>
-          <h2 class="section-title">About Naushifa Rasheed</h2>
+          <h2 class="section-title" id="pubAboutHeading">About Naushifa Rasheed</h2>
           <p class="section-desc" id="pubTagline">
             ECC @ IEEE SB CE Kallooppara · Computer Science Student at APJ Abdul Kalam Technological University
           </p>
         </div>
+
         <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 36px; max-width: 900px; margin: 0 auto; box-shadow: var(--shadow-sm);">
           <p id="pubDetailedBio" style="font-size: 1.05rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 24px;"></p>
           <div style="display: flex; gap: 16px; flex-wrap: wrap;">
@@ -1808,6 +1747,7 @@
           <h2 class="section-title">Technical Expertise</h2>
           <p class="section-desc">Hardware microcontrollers, embedded firmware, IoT networking, and programming environments.</p>
         </div>
+
         <div class="skills-filter-row" id="skillsFilterRow">
           <button class="filter-pill active" onclick="filterSkills('All')">All Skills</button>
           <button class="filter-pill" onclick="filterSkills('Microcontrollers & Hardware')">Microcontrollers & Hardware</button>
@@ -1815,6 +1755,7 @@
           <button class="filter-pill" onclick="filterSkills('IoT & Networking')">IoT & Networking</button>
           <button class="filter-pill" onclick="filterSkills('Robotics & Systems')">Robotics</button>
         </div>
+
         <div class="skills-grid" id="pubSkillsGrid"></div>
       </div>
     </section>
@@ -1827,12 +1768,14 @@
           <h2 class="section-title">Engineered Projects</h2>
           <p class="section-desc">Practical systems across ESP32 IoT telemetry, autonomous obstacle rovers, and web portals.</p>
         </div>
+
         <div class="skills-filter-row" id="projectsFilterRow">
           <button class="filter-pill active" onclick="filterProjects('All')">All Projects</button>
           <button class="filter-pill" onclick="filterProjects('Embedded & IoT')">Embedded & IoT</button>
           <button class="filter-pill" onclick="filterProjects('Robotics')">Robotics</button>
           <button class="filter-pill" onclick="filterProjects('Web & Systems')">Web & Systems</button>
         </div>
+
         <div class="projects-grid" id="pubProjectsGrid"></div>
       </div>
     </section>
@@ -1845,6 +1788,7 @@
           <h2 class="section-title">Positions & Experience</h2>
           <p class="section-desc">Engineering internships and student leadership positions.</p>
         </div>
+
         <div class="timeline-container" id="pubExperienceTimeline"></div>
       </div>
     </section>
@@ -1857,6 +1801,7 @@
           <h2 class="section-title">Education</h2>
           <p class="section-desc">Academic engineering degrees and technical milestones.</p>
         </div>
+
         <div class="timeline-container" id="pubEducationTimeline"></div>
       </div>
     </section>
@@ -1865,38 +1810,41 @@
     <section id="resume-section" class="section" style="background: rgba(17, 24, 39, 0.4);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Official Document</span>
-          <h2 class="section-title">Auto-Generated Resume</h2>
-          <p class="section-desc">Live ATS-compliant resume compiled automatically from every profile detail, skill, position, and education record in this portfolio.</p>
+          <span class="section-tag">Live Auto-Synced Document</span>
+          <h2 class="section-title">Official Engineering Resume</h2>
+          <p class="section-desc">Dynamically compiled in real time from every skill, position, education record, and project in this portfolio.</p>
         </div>
+
         <div class="resume-box">
-          <div class="resume-toolbar">
+          <div class="resume-controls">
             <div style="font-size: 0.95rem; color: var(--text-muted);">
-              🔄 Live-Synced with Portfolio Data · Clean Print / Save as PDF Ready
+              ATS-Compliant & Auto-Synced · Updates automatically whenever portfolio data changes
             </div>
             <button onclick="downloadResumePDF()" class="btn-primary" style="padding: 10px 22px;">
-              <span>⬇️ Print / Save as PDF</span>
+              <span>🖨️ Download / Save as PDF</span>
             </button>
           </div>
 
           <div class="resume-sheet-preview" id="printableResumeArea">
             <div class="res-header">
               <div class="res-name" id="resDocName">Naushifa Rasheed</div>
-              <div class="res-sub" id="resDocSub">ECC, IEEE SB CE Kallooppara · Student at College Of Engineering Kallooppara - India</div>
+              <div class="res-sub" id="resDocTitle">Computer Science Engineer | Embedded Systems, IoT & Robotics</div>
+              <div style="font-size: 0.82rem; color: #334155; margin-top: 2px;" id="resDocSub">ECC @ IEEE SB CE Kallooppara · Computer Science Student at APJ Abdul Kalam Technological University</div>
               <div class="res-contacts">
                 <span>📍 <span id="resDocLoc">Tiruvalla, Kerala, India</span></span>
                 <span>✉️ <a id="resDocEmail" href="mailto:naushifa06@gmail.com">naushifa06@gmail.com</a></span>
                 <span>🔗 <a id="resDocLinkedin" href="https://www.linkedin.com/in/naushifa-rasheed" target="_blank">linkedin.com/in/naushifa-rasheed</a></span>
-                <span>💻 <a id="resDocGithub" href="https://github.com/naushifa-rasheed" target="_blank">github.com/naushifa-rasheed</a></span>
+                <span id="resDocGithubWrap">💻 <a id="resDocGithub" href="https://github.com/naushifa-rasheed" target="_blank">github.com/naushifa-rasheed</a></span>
               </div>
             </div>
 
-            <div class="res-summary" id="resDocSummary"></div>
+            <div class="res-sec-title">Professional Summary</div>
+            <div id="resDocBio" style="font-size: 0.83rem; color: #334155; margin-bottom: 10px;"></div>
 
             <div class="res-sec-title">Technical Skills</div>
-            <div class="res-skills-grid" id="resDocSkillsList"></div>
+            <div id="resDocSkillsList" style="margin-bottom: 10px; color: #1e293b;"></div>
 
-            <div class="res-sec-title">Positions & Professional Experience</div>
+            <div class="res-sec-title">Positions &amp; Professional Experience</div>
             <div id="resDocExpList"></div>
 
             <div class="res-sec-title">Education</div>
@@ -1917,6 +1865,7 @@
           <h2 class="section-title">Let's Connect & Collaborate</h2>
           <p class="section-desc">Open for engineering internships, technical collaborations, and robotics projects.</p>
         </div>
+
         <div class="contact-grid">
           <div class="contact-card">
             <div class="contact-item">
@@ -1988,7 +1937,7 @@
           </ul>
         </div>
         <div class="footer-bottom">
-          <div>&copy; 2026 Naushifa Rasheed. All rights reserved.</div>
+          <div>&copy; 2026 <span id="footerCopyrightName">Naushifa Rasheed</span>. All rights reserved.</div>
           <div>
             <button onclick="switchToAdminView()" style="background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 4px;">
               <span>🔐 Admin Portal</span>
@@ -2003,6 +1952,7 @@
        VIEW 2: ADMIN PORTAL (SSH-SECURED & ALWAYS PROMPTED ON CLICK)
        ======================================================================== -->
   <div id="adminPortalView">
+
     <!-- 1. Authentication / Login Screen (ALWAYS ASKED ON CLICK!) -->
     <div id="authScreen" class="auth-wrapper">
       <div class="auth-card">
@@ -2012,6 +1962,7 @@
           <p>Portfolio Content & Credential Management Portal</p>
         </div>
 
+        <!-- SSH-Secured Status Banner -->
         <div class="ssh-badge-banner">
           <div><strong>🔒 SSH-Secured Cryptographic Gateway</strong></div>
           <div>Suite: <code>PBKDF2-HMAC-SHA256 (100k rounds)</code></div>
@@ -2042,6 +1993,8 @@
 
     <!-- 2. Admin Dashboard (Shown ONLY when authenticated) -->
     <div id="adminDashboard" class="admin-layout" style="display: none;">
+      
+      <!-- Sidebar -->
       <aside class="admin-sidebar">
         <div class="sidebar-header">
           <div class="sidebar-logo">NR</div>
@@ -2088,19 +2041,22 @@
         </div>
       </aside>
 
+      <!-- Main Workspace -->
       <main class="admin-workspace">
+
         <!-- TAB 1: Profile & Avatar Management -->
         <section id="tab-profile" class="tab-content-panel active">
           <div class="workspace-header">
             <div>
               <h1>Profile & Avatar Grid Arrangement</h1>
-              <p>Configure picture layout arrangements, multi-photo grid slots, floating badges, and personal bio. Automatically updates your resume.</p>
+              <p>Configure picture layout arrangements, multi-photo grid slots, floating badges, and personal bio.</p>
             </div>
             <div>
               <button onclick="saveProfileForm()" class="btn-solid-green">Save Profile Changes</button>
             </div>
           </div>
 
+          <!-- Profile Picture & Grid Arrangement Box -->
           <div class="admin-card">
             <div class="admin-card-title">
               <span>🖼️ Profile Picture Grid Arrangement</span>
@@ -2130,18 +2086,19 @@
               </label>
               <label class="arrangement-option" data-style="dual-grid" onclick="selectAvatarStyle('dual-grid')">
                 <input type="radio" name="avatarArrangement" value="dual-grid">
-                <div style="font-size: 1.5rem;">🖼️</div>
+                <div style="font-size: 1.5rem;">🪟</div>
                 <strong>Dual Staggered Grid</strong>
                 <span style="font-size: 0.75rem; color: var(--text-muted);">2-Photo offset</span>
               </label>
               <label class="arrangement-option" data-style="gallery-grid" onclick="selectAvatarStyle('gallery-grid')">
                 <input type="radio" name="avatarArrangement" value="gallery-grid">
-                <div style="font-size: 1.5rem;">🎛️</div>
+                <div style="font-size: 1.5rem;">⊞</div>
                 <strong>Quad Tech Grid</strong>
                 <span style="font-size: 0.75rem; color: var(--text-muted);">2x2 Photo gallery</span>
               </label>
             </div>
 
+            <!-- Primary Avatar & Upload -->
             <div class="avatar-editor-box">
               <div class="avatar-preview-display">
                 <img id="adminAvatarPreview" src="" alt="Avatar Preview">
@@ -2166,12 +2123,14 @@
               </div>
             </div>
 
+            <!-- Multi-Photo Grid Slots Editor (For Dual & Quad Arrangements) -->
             <div style="border-top: 1px solid var(--admin-border); padding-top: 20px; margin-top: 20px; margin-bottom: 20px;">
               <h4 style="font-size: 1rem; margin-bottom: 6px;">🧩 Grid Arrangement Slots (Slots 2, 3 & 4)</h4>
               <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 14px;">
                 Customize the secondary photos and badge labels shown when <strong>Dual Staggered Grid</strong> or <strong>Quad Tech Grid</strong> is selected.
               </p>
               <div class="form-grid-3">
+                <!-- Slot 2 -->
                 <div class="admin-card" style="margin-bottom:0; padding:14px;">
                   <strong style="display:block; font-size:0.85rem; color:var(--admin-cyan); margin-bottom:8px;">Grid Slot #2 (Dual & Quad)</strong>
                   <img id="gridPreview2" src="" alt="Slot 2" style="width:100%; height:90px; object-fit:cover; border-radius:6px; margin-bottom:8px; background:#0d1117;">
@@ -2189,6 +2148,7 @@
                   </label>
                 </div>
 
+                <!-- Slot 3 -->
                 <div class="admin-card" style="margin-bottom:0; padding:14px;">
                   <strong style="display:block; font-size:0.85rem; color:var(--admin-cyan); margin-bottom:8px;">Grid Slot #3 (Quad Only)</strong>
                   <img id="gridPreview3" src="" alt="Slot 3" style="width:100%; height:90px; object-fit:cover; border-radius:6px; margin-bottom:8px; background:#0d1117;">
@@ -2206,6 +2166,7 @@
                   </label>
                 </div>
 
+                <!-- Slot 4 -->
                 <div class="admin-card" style="margin-bottom:0; padding:14px;">
                   <strong style="display:block; font-size:0.85rem; color:var(--admin-cyan); margin-bottom:8px;">Grid Slot #4 (Quad Only)</strong>
                   <img id="gridPreview4" src="" alt="Slot 4" style="width:100%; height:90px; object-fit:cover; border-radius:6px; margin-bottom:8px; background:#0d1117;">
@@ -2225,6 +2186,7 @@
               </div>
             </div>
 
+            <!-- Floating Badges Customization -->
             <div style="border-top: 1px solid var(--admin-border); padding-top: 20px; margin-top: 20px;">
               <h4 style="font-size: 1rem; margin-bottom: 12px;">Floating Badge Labels & Positions</h4>
               <div class="form-grid-2">
@@ -2246,6 +2208,7 @@
                     <input type="text" id="badgeTopSub" class="admin-input" value="Hardware & Firmware">
                   </div>
                 </div>
+
                 <div class="admin-card" style="margin-bottom:0; padding:16px;">
                   <label style="display:flex; justify-content:space-between; align-items:center; font-weight:700; margin-bottom:10px;">
                     <span>Bottom-Right Badge</span>
@@ -2284,14 +2247,17 @@
                   <input type="text" id="profileBrandName" class="admin-input" value="Naushifa" required>
                 </div>
               </div>
+
               <div class="admin-form-group">
                 <label>Professional Title</label>
                 <input type="text" id="profileTitle" class="admin-input" required>
               </div>
+
               <div class="admin-form-group">
                 <label>Tagline / Affiliation</label>
                 <input type="text" id="profileTagline" class="admin-input" required>
               </div>
+
               <div class="form-grid-2">
                 <div class="admin-form-group">
                   <label>Location</label>
@@ -2302,6 +2268,7 @@
                   <input type="email" id="profileEmail" class="admin-input" required>
                 </div>
               </div>
+
               <div class="form-grid-2">
                 <div class="admin-form-group">
                   <label>LinkedIn Profile URL</label>
@@ -2312,14 +2279,17 @@
                   <input type="url" id="profileGithub" class="admin-input">
                 </div>
               </div>
+
               <div class="admin-form-group">
                 <label>Availability Status Pill</label>
                 <input type="text" id="profileStatus" class="admin-input">
               </div>
+
               <div class="admin-form-group">
-                <label>Extended About Me Bio (Also appears as Summary on Resume)</label>
+                <label>Extended About Me Bio</label>
                 <textarea id="profileBio" class="admin-textarea" rows="4"></textarea>
               </div>
+
               <button type="submit" class="btn-solid-green">Save Profile Changes</button>
             </form>
           </div>
@@ -2336,6 +2306,7 @@
               <button onclick="openProjectModal()" class="btn-solid-green">+ Add New Project</button>
             </div>
           </div>
+
           <div class="admin-card">
             <div class="admin-table-wrap">
               <table class="admin-table">
@@ -2359,12 +2330,13 @@
           <div class="workspace-header">
             <div>
               <h1>Positions & Work Experience</h1>
-              <p>Manage internships, roles (ECC), and technical appointments. Automatically synced to your resume.</p>
+              <p>Manage internships, roles (ECC), and technical appointments. Automatically syncs to the resume.</p>
             </div>
             <div>
               <button onclick="openExperienceModal()" class="btn-solid-green">+ Add New Position</button>
             </div>
           </div>
+
           <div class="admin-card">
             <div class="admin-table-wrap">
               <table class="admin-table">
@@ -2388,12 +2360,13 @@
           <div class="workspace-header">
             <div>
               <h1>Education Records</h1>
-              <p>Manage universities, engineering degrees, and certifications. Automatically synced to your resume.</p>
+              <p>Manage universities, engineering degrees, and certifications. Automatically syncs to the resume.</p>
             </div>
             <div>
               <button onclick="openEducationModal()" class="btn-solid-green">+ Add Education</button>
             </div>
           </div>
+
           <div class="admin-card">
             <div class="admin-table-wrap">
               <table class="admin-table">
@@ -2417,12 +2390,13 @@
           <div class="workspace-header">
             <div>
               <h1>Technical Skills</h1>
-              <p>Configure microcontrollers, programming languages, and proficiencies. Every skill listed here is automatically compiled into your resume.</p>
+              <p>Configure microcontrollers, programming languages, and proficiencies. Automatically syncs to the resume.</p>
             </div>
             <div>
               <button onclick="openSkillModal()" class="btn-solid-green">+ Add Technical Skill</button>
             </div>
           </div>
+
           <div class="admin-card">
             <div class="admin-table-wrap">
               <table class="admin-table">
@@ -2449,8 +2423,8 @@
               <p>Connect your <code>portfolio.json</code> directly to GitHub using a Fine-Grained Personal Access Token so any changes update live for the entire world!</p>
             </div>
             <div style="display: flex; gap: 10px;">
-              <button onclick="downloadPortfolioJSON()" class="btn-ghost">⬇️ Download portfolio.json</button>
-              <button onclick="pushToGitHub()" class="btn-solid-green">☁️ Push & Publish Live to World</button>
+              <button onclick="downloadPortfolioJSON()" class="btn-ghost">📥 Download portfolio.json</button>
+              <button onclick="pushToGitHub()" class="btn-solid-green">🚀 Push & Publish Live to World</button>
             </div>
           </div>
 
@@ -2495,7 +2469,7 @@
 
           <div class="admin-card">
             <div class="admin-card-title">
-              <span>📖 Step-by-Step: Generate Fine-Grained Token</span>
+              <span>📋 Step-by-Step: Generate Fine-Grained Token</span>
             </div>
             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">
               <ol style="padding-left: 20px;">
@@ -2522,6 +2496,7 @@
               <p>Messages and collaborative inquiries submitted through the contact form.</p>
             </div>
           </div>
+
           <div class="admin-card">
             <div class="admin-table-wrap">
               <table class="admin-table">
@@ -2539,6 +2514,7 @@
             </div>
           </div>
         </section>
+
       </main>
     </div>
   </div>
@@ -2546,6 +2522,7 @@
   <!-- ========================================================================
        MODALS FOR CRUD & USERNAME / PASSWORD CHANGE
        ======================================================================== -->
+
   <!-- Modal: Project Add/Edit -->
   <div id="projectModalOverlay" class="admin-modal-overlay">
     <div class="admin-modal-content">
@@ -2598,7 +2575,7 @@
         <div style="margin-top: 10px;">
           <label style="display:flex; align-items:center; gap: 8px; cursor:pointer;">
             <input type="checkbox" id="mProjFeatured" checked>
-            <span>Feature this project on homepage & resume</span>
+            <span>Feature this project on homepage</span>
           </label>
         </div>
         <div class="admin-modal-footer">
@@ -2717,7 +2694,7 @@
         <div style="margin-top: 14px;">
           <label style="display:flex; align-items:center; gap: 8px; cursor:pointer;">
             <input type="checkbox" id="mSkillTop">
-            <span>Highlight as Top Skill on Homepage & Resume (e.g. ESP32, Arduino)</span>
+            <span>Highlight as Top Skill on Homepage &amp; Resume</span>
           </label>
         </div>
         <div class="admin-modal-footer">
@@ -2913,6 +2890,7 @@
       const savedTheme = localStorage.getItem('naushifa_theme') || 'dark';
       document.documentElement.setAttribute('data-theme', savedTheme);
       updateThemeButton(savedTheme);
+
       document.getElementById('themeToggle').addEventListener('click', () => {
         const cur = document.documentElement.getAttribute('data-theme') || 'dark';
         const next = cur === 'dark' ? 'light' : 'dark';
@@ -2941,21 +2919,6 @@
     }
 
     // ========================================================================
-    // PRINT / SAVE AS PDF HANDLER (Sets clean filename & invokes print)
-    // ========================================================================
-    function downloadResumePDF() {
-      const originalTitle = document.title;
-      const fullName = (appData && appData.profile && appData.profile.full_name)
-        ? appData.profile.full_name.trim().replace(/\s+/g, '_')
-        : 'Naushifa_Rasheed';
-      document.title = `${fullName}_Resume`;
-      window.print();
-      setTimeout(() => {
-        document.title = originalTitle;
-      }, 500);
-    }
-
-    // ========================================================================
     // REQUIRE CREDENTIALS EVERY TIME WE CLICK ADMIN!
     // ========================================================================
     function switchToAdminView() {
@@ -2963,9 +2926,12 @@
       document.getElementById('publicPortfolioView').style.display = 'none';
       document.getElementById('adminPortalView').style.display = 'block';
       window.scrollTo(0, 0);
+
+      // ALWAYS lock and ask credentials on every visit!
       isAdminAuthenticated = false;
       document.getElementById('authScreen').style.display = 'flex';
       document.getElementById('adminDashboard').style.display = 'none';
+
       document.getElementById('loginUsername').value = '';
       document.getElementById('loginPassword').value = '';
       document.getElementById('loginUsername').focus();
@@ -2981,6 +2947,9 @@
       document.getElementById('loginPassword').value = '';
       document.getElementById('adminPortalView').style.display = 'none';
       document.getElementById('publicPortfolioView').style.display = 'block';
+      if (appData) {
+        renderPublicPortfolio();
+      }
     }
 
     // ========================================================================
@@ -3033,40 +3002,49 @@
     }
 
     function getActiveUsername() {
-      return (appData && appData.auth && appData.auth.username)
-        ? appData.auth.username
+      return (appData && appData.auth && appData.auth.username) 
+        ? appData.auth.username 
         : (localStorage.getItem('naushifa_custom_username') || 'admin');
     }
 
     function updateSshBadgeDisplay() {
-      const fp = (appData && appData.auth && appData.auth.ssh_fingerprint)
+      const fp = (appData && appData.auth && appData.auth.ssh_fingerprint) 
         ? appData.auth.ssh_fingerprint.slice(0, 24) + '...'
         : 'SHA256:c92bf3ec4f7b...';
       const fpEl = document.getElementById('loginSshFingerprint');
       if (fpEl) fpEl.textContent = fp;
     }
 
-    // Load Data (Local Storage -> portfolio.json -> Fallback)
+    // Load Data (Live portfolio.json -> Local Storage Offline Fallback -> Built-in Default)
     async function loadAppData() {
-      const cached = localStorage.getItem('naushifa_portfolio_data');
-      if (cached) {
-        try {
-          appData = JSON.parse(cached);
-        } catch (e) {}
+      let loadedFromServer = false;
+
+      // 1. Always fetch the latest live portfolio.json first (cache-busted for Vercel/CDN)
+      try {
+        const res = await fetch(`portfolio.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (res.ok) {
+          appData = await res.json();
+          loadedFromServer = true;
+        }
+      } catch (e) {
+        console.log('Live portfolio.json fetch failed, checking local cache...');
       }
-      if (!appData) {
-        try {
-          const res = await fetch('portfolio.json', { cache: 'no-store' });
-          if (res.ok) {
-            appData = await res.json();
-          }
-        } catch (e) {
-          console.log('portfolio.json fetch failed, using built-in default data.');
+
+      // 2. Fallback to localStorage only if offline or portfolio.json is unreachable
+      if (!loadedFromServer) {
+        const cached = localStorage.getItem('naushifa_portfolio_data');
+        if (cached) {
+          try {
+            appData = JSON.parse(cached);
+          } catch (e) {}
         }
       }
+
+      // 3. Final fallback to built-in defaults
       if (!appData) {
         appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
       }
+
       if (!appData.auth) appData.auth = DEFAULT_DATA.auth;
       if (!appData.profile) appData.profile = DEFAULT_DATA.profile;
       if (!appData.profile.avatar_arrangement) appData.profile.avatar_arrangement = 'circle';
@@ -3090,15 +3068,19 @@
     }
 
     // ========================================================================
-    // RENDER PUBLIC PORTFOLIO & LIVE ATS RESUME
+    // RENDER PUBLIC PORTFOLIO & AUTO-SYNCED RESUME
     // ========================================================================
     function renderPublicPortfolio() {
       const p = appData.profile || {};
       const brand = p.brand_name || 'Naushifa';
+      const fullName = p.full_name || 'Naushifa Rasheed';
+
       document.getElementById('navBrandName').textContent = brand;
       document.getElementById('footerBrandName').textContent = brand;
-      document.getElementById('pubFullName').textContent = p.full_name || 'Naushifa Rasheed';
-      document.title = `${brand} | Professional Portfolio`;
+      document.getElementById('footerCopyrightName').textContent = fullName;
+      document.getElementById('pubFullName').textContent = fullName;
+      document.getElementById('pubAboutHeading').textContent = `About ${fullName}`;
+      document.title = `${brand} | Professional Portfolio & Resume`;
       document.getElementById('pubHeroTitle').textContent = p.title || '';
       document.getElementById('pubHeroBio').textContent = p.bio || '';
       document.getElementById('pubLocation').textContent = p.location || 'Tiruvalla, Kerala, India';
@@ -3111,42 +3093,16 @@
 
       document.getElementById('pubContactEmail').textContent = p.email || 'naushifa06@gmail.com';
       document.getElementById('pubContactEmail').href = `mailto:${p.email || 'naushifa06@gmail.com'}`;
-      document.getElementById('pubContactLinkedin').textContent = (p.linkedin || 'linkedin.com/in/naushifa-rasheed').replace('https://www.', '').replace('https://', '');
+      document.getElementById('pubContactLinkedin').textContent = (p.linkedin || 'linkedin.com/in/naushifa-rasheed').replace(/^https?:\/\/(www\.)?/, '');
       document.getElementById('pubContactLinkedin').href = p.linkedin || '#';
       document.getElementById('pubContactLocation').textContent = p.location || 'Tiruvalla, Kerala, India';
-
-      // Sync Resume Header & Summary
-      document.getElementById('resDocName').textContent = p.full_name || 'Naushifa Rasheed';
-      document.getElementById('resDocSub').textContent = p.title || p.tagline || 'Computer Science Engineer';
-      document.getElementById('resDocLoc').textContent = p.location || 'Tiruvalla, Kerala, India';
-      document.getElementById('resDocEmail').textContent = p.email || 'naushifa06@gmail.com';
-      document.getElementById('resDocEmail').href = `mailto:${p.email || 'naushifa06@gmail.com'}`;
-      document.getElementById('resDocLinkedin').textContent = (p.linkedin || 'linkedin.com/in/naushifa-rasheed').replace('https://www.', '').replace('https://', '');
-      document.getElementById('resDocLinkedin').href = p.linkedin || '#';
-
-      const ghEl = document.getElementById('resDocGithub');
-      if (ghEl) {
-        if (p.github) {
-          ghEl.parentElement.style.display = 'inline';
-          ghEl.textContent = p.github.replace('https://www.', '').replace('https://', '');
-          ghEl.href = p.github;
-        } else {
-          ghEl.parentElement.style.display = 'none';
-        }
-      }
-
-      const summaryEl = document.getElementById('resDocSummary');
-      if (summaryEl) {
-        summaryEl.textContent = p.bio || '';
-        summaryEl.style.display = p.bio ? 'block' : 'none';
-      }
 
       renderHeroProfilePicture();
       renderPublicSkills();
       renderPublicProjects();
       renderPublicExperience();
       renderPublicEducation();
-      renderResumeLists();
+      renderResumeDocument();
     }
 
     function renderHeroProfilePicture() {
@@ -3249,7 +3205,7 @@
             <h3 class="project-title">${escapeHTML(proj.title)}</h3>
             <p class="project-desc">${escapeHTML(proj.description)}</p>
             <div class="project-tags">
-              ${(proj.tags || '').split(',').map(t => `<span class="tag-chip">${escapeHTML(t.trim())}</span>`).join('')}
+              ${(proj.tags || '').split(',').filter(Boolean).map(t => `<span class="tag-chip">${escapeHTML(t.trim())}</span>`).join('')}
             </div>
             <div class="project-footer">
               ${proj.github_url ? `<a href="${escapeHTML(proj.github_url)}" target="_blank" rel="noopener" class="project-link"><span>GitHub Repo ↗</span></a>` : '<span></span>'}
@@ -3304,92 +3260,125 @@
       `).join('');
     }
 
-    // Dynamically builds the entire resume from ALL portfolio skills, positions, education & projects
-    function renderResumeLists() {
-      // 1. Every Technical Skill (grouped by category, highlighting top skills)
+    // ========================================================================
+    // DYNAMIC AUTO-SYNCED RESUME BUILDER (Pulls 100% from appData)
+    // ========================================================================
+    function renderResumeDocument() {
+      const p = appData.profile || {};
+      const skills = appData.skills || [];
+      const experiences = appData.experiences || [];
+      const education = appData.education || [];
+      const projects = appData.projects || [];
+
+      // 1. Header & Contact Details
+      document.getElementById('resDocName').textContent = p.full_name || 'Naushifa Rasheed';
+      document.getElementById('resDocTitle').textContent = p.title || '';
+      document.getElementById('resDocSub').textContent = p.tagline || '';
+      document.getElementById('resDocLoc').textContent = p.location || '';
+
+      const emailEl = document.getElementById('resDocEmail');
+      emailEl.textContent = p.email || '';
+      emailEl.href = p.email ? `mailto:${p.email}` : '#';
+
+      const linkedinEl = document.getElementById('resDocLinkedin');
+      linkedinEl.textContent = (p.linkedin || '').replace(/^https?:\/\/(www\.)?/, '');
+      linkedinEl.href = p.linkedin || '#';
+
+      const githubWrap = document.getElementById('resDocGithubWrap');
+      const githubEl = document.getElementById('resDocGithub');
+      if (p.github) {
+        githubWrap.style.display = 'inline';
+        githubEl.textContent = p.github.replace(/^https?:\/\/(www\.)?/, '');
+        githubEl.href = p.github;
+      } else {
+        githubWrap.style.display = 'none';
+      }
+
+      // 2. Professional Summary
+      document.getElementById('resDocBio').textContent = p.bio || '';
+
+      // 3. Every Skill from Portfolio (grouped by category, highlighting top skills)
       const skillsContainer = document.getElementById('resDocSkillsList');
-      const allSkills = appData.skills || [];
-      if (allSkills.length === 0) {
-        skillsContainer.innerHTML = `<div style="color:#64748b; font-size:0.8rem;">No skills added yet.</div>`;
+      if (skills.length === 0) {
+        skillsContainer.innerHTML = `<div style="font-size:0.82rem; color:#64748b;">No skills added yet.</div>`;
       } else {
         const grouped = {};
-        allSkills.forEach(s => {
+        skills.forEach(s => {
           const cat = s.category || 'Technical Skills';
           if (!grouped[cat]) grouped[cat] = [];
           grouped[cat].push(s);
         });
 
         skillsContainer.innerHTML = Object.entries(grouped).map(([category, items]) => {
-          const skillNames = items.map(item =>
-            item.is_top_skill
-              ? `<strong>${escapeHTML(item.name)}</strong>`
-              : escapeHTML(item.name)
+          const formattedItems = items.map(item =>
+            item.is_top_skill ? `<strong>${escapeHTML(item.name)}</strong>` : escapeHTML(item.name)
           ).join(' · ');
-          return `
-            <div class="res-skill-row">
-              <span class="res-skill-cat-label">${escapeHTML(category)}:</span> ${skillNames}
-            </div>
-          `;
+          return `<div class="res-skill-group"><strong style="color:#0f172a;">${escapeHTML(category)}:</strong> ${formattedItems}</div>`;
         }).join('');
       }
 
-      // 2. Every Position & Experience
+      // 4. Every Position & Experience from Portfolio
       const expContainer = document.getElementById('resDocExpList');
-      const allExps = appData.experiences || [];
-      if (allExps.length === 0) {
-        expContainer.innerHTML = `<div style="color:#64748b; font-size:0.8rem;">No positions listed yet.</div>`;
+      if (experiences.length === 0) {
+        expContainer.innerHTML = `<div style="font-size:0.82rem; color:#64748b;">No positions added yet.</div>`;
       } else {
-        expContainer.innerHTML = allExps.map(e => `
-          <div class="res-entry-item">
-            <div class="res-entry-top">
-              <span>${escapeHTML(e.role)} — ${escapeHTML(e.company)}</span>
-              <span class="res-entry-period">${escapeHTML(e.period)}</span>
+        expContainer.innerHTML = experiences.map(e => `
+          <div class="res-entry">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:10px; font-weight:700; color:#0f172a;">
+              <span>${escapeHTML(e.role)} — <span style="color:#1e293b;">${escapeHTML(e.company)}</span></span>
+              <span style="color:#0284c7; font-size:0.78rem; white-space:nowrap;">${escapeHTML(e.period || '')}</span>
             </div>
-            ${e.location ? `<div class="res-entry-meta">${escapeHTML(e.location)}</div>` : ''}
-            ${e.description ? `<div class="res-entry-desc">${escapeHTML(e.description)}</div>` : ''}
+            ${e.location ? `<div style="font-size:0.75rem; color:#64748b; margin-bottom:2px;">${escapeHTML(e.location)}</div>` : ''}
+            ${e.description ? `<div style="font-size:0.81rem; color:#334155;">${escapeHTML(e.description)}</div>` : ''}
           </div>
         `).join('');
       }
 
-      // 3. Every Education Record
+      // 5. Every Education Record from Portfolio (including details)
       const eduContainer = document.getElementById('resDocEduList');
-      const allEdus = appData.education || [];
-      if (allEdus.length === 0) {
-        eduContainer.innerHTML = `<div style="color:#64748b; font-size:0.8rem;">No education records listed yet.</div>`;
+      if (education.length === 0) {
+        eduContainer.innerHTML = `<div style="font-size:0.82rem; color:#64748b;">No education records added yet.</div>`;
       } else {
-        eduContainer.innerHTML = allEdus.map(ed => `
-          <div class="res-entry-item">
-            <div class="res-entry-top">
+        eduContainer.innerHTML = education.map(ed => `
+          <div class="res-entry">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:10px; font-weight:700; color:#0f172a;">
               <span>${escapeHTML(ed.degree)}</span>
-              <span class="res-entry-period">${escapeHTML(ed.period)}</span>
+              <span style="color:#0284c7; font-size:0.78rem; white-space:nowrap;">${escapeHTML(ed.period || '')}</span>
             </div>
-            <div class="res-entry-meta">${escapeHTML(ed.institution)}${ed.location ? ' · ' + escapeHTML(ed.location) : ''}</div>
-            ${ed.details ? `<div class="res-entry-desc">${escapeHTML(ed.details)}</div>` : ''}
+            <div style="font-size:0.8rem; color:#475569; font-weight:600;">
+              ${escapeHTML(ed.institution)}${ed.location ? ` · ${escapeHTML(ed.location)}` : ''}
+            </div>
+            ${ed.details ? `<div style="font-size:0.8rem; color:#334155; margin-top:2px;">${escapeHTML(ed.details)}</div>` : ''}
           </div>
         `).join('');
       }
 
-      // 4. Featured Engineering Projects
+      // 6. Featured / Portfolio Projects
       const projHeading = document.getElementById('resDocProjHeading');
       const projContainer = document.getElementById('resDocProjList');
-      const featuredProjects = (appData.projects || []).filter(p => p.featured);
-      if (projHeading && projContainer) {
-        if (featuredProjects.length === 0) {
-          projHeading.style.display = 'none';
-          projContainer.innerHTML = '';
-        } else {
-          projHeading.style.display = 'block';
-          projContainer.innerHTML = featuredProjects.map(p => `
-            <div class="res-entry-item">
-              <div class="res-entry-top">
-                <span>${escapeHTML(p.title)}</span>
-                <span class="res-entry-period">${escapeHTML(p.tags || p.category)}</span>
-              </div>
-              <div class="res-entry-desc">${escapeHTML(p.description)}</div>
+      if (projects.length === 0) {
+        projHeading.style.display = 'none';
+        projContainer.innerHTML = '';
+      } else {
+        projHeading.style.display = 'block';
+        projContainer.innerHTML = projects.map(pr => `
+          <div class="res-entry">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:10px; font-weight:700; color:#0f172a;">
+              <span>${escapeHTML(pr.title)} <span style="font-weight:500; color:#475569;">(${escapeHTML(pr.category || 'Project')})</span></span>
+              ${pr.tags ? `<span style="color:#0284c7; font-size:0.74rem; font-family:monospace;">${escapeHTML(pr.tags)}</span>` : ''}
             </div>
-          `).join('');
-        }
+            <div style="font-size:0.8rem; color:#334155;">${escapeHTML(pr.description || '')}</div>
+          </div>
+        `).join('');
       }
+    }
+
+    function downloadResumePDF() {
+      // Ensure resume DOM is 100% up-to-date right before opening print/Save-as-PDF dialog
+      renderResumeDocument();
+      setTimeout(() => {
+        window.print();
+      }, 60);
     }
 
     function handlePublicContact(e) {
@@ -3409,7 +3398,7 @@
       if (!appData.messages) appData.messages = [];
       appData.messages.unshift(newMsg);
       saveDataLocally();
-      showToast(`Thank you, ${name}! Your inquiry has been sent to Naushifa.`, 'success');
+      showToast(`Thank you, ${name}! Your inquiry has been sent.`, 'success');
       document.getElementById('publicContactForm').reset();
     }
 
@@ -3429,6 +3418,7 @@
 
       const auth = (appData && appData.auth) ? appData.auth : DEFAULT_DATA.auth;
       const isValid = await verifySSHPassword(enteredUser, enteredPass, auth);
+
       if (isValid) {
         isAdminAuthenticated = true;
         document.getElementById('loginUsername').value = '';
@@ -3509,6 +3499,7 @@
       document.getElementById('profileGithub').value = p.github || '';
       document.getElementById('profileStatus').value = p.availability_status || '';
       document.getElementById('profileBio').value = p.bio || '';
+
       document.getElementById('adminAvatarPreview').src = p.avatar_url || '';
       document.getElementById('avatarUrlInput').value = p.avatar_url || '';
 
@@ -3591,7 +3582,7 @@
 
       saveDataLocally();
       renderPublicPortfolio();
-      showToast('Profile, resume & grid layout updated!', 'success');
+      showToast('Profile & Resume updated successfully!', 'success');
       autoSyncToGitHub();
     }
 
@@ -3709,7 +3700,7 @@
       if (editingProjectId) {
         const idx = appData.projects.findIndex(p => p.id === editingProjectId);
         if (idx !== -1) appData.projects[idx] = projObj;
-        showToast('Project & resume updated!', 'success');
+        showToast('Project & Resume updated!', 'success');
       } else {
         appData.projects.unshift(projObj);
         showToast('New project added to portfolio & resume!', 'success');
@@ -3727,7 +3718,7 @@
       saveDataLocally();
       renderPublicPortfolio();
       renderAdminProjectsTable();
-      showToast('Project removed from portfolio & resume.', 'success');
+      showToast('Project deleted & resume synced.', 'success');
       autoSyncToGitHub();
     }
 
@@ -3791,7 +3782,7 @@
       if (editingExpId) {
         const idx = appData.experiences.findIndex(x => x.id === editingExpId);
         if (idx !== -1) appData.experiences[idx] = expObj;
-        showToast('Position & resume updated!', 'success');
+        showToast('Position & Resume updated!', 'success');
       } else {
         appData.experiences.unshift(expObj);
         showToast('New position added to portfolio & resume!', 'success');
@@ -3809,7 +3800,7 @@
       saveDataLocally();
       renderPublicPortfolio();
       renderAdminExperienceTable();
-      showToast('Position removed from portfolio & resume.', 'success');
+      showToast('Position removed & resume synced.', 'success');
       autoSyncToGitHub();
     }
 
@@ -3872,7 +3863,7 @@
       if (editingEduId) {
         const idx = appData.education.findIndex(x => x.id === editingEduId);
         if (idx !== -1) appData.education[idx] = eduObj;
-        showToast('Education record & resume updated!', 'success');
+        showToast('Education & Resume updated!', 'success');
       } else {
         appData.education.unshift(eduObj);
         showToast('Education record added to portfolio & resume!', 'success');
@@ -3890,7 +3881,7 @@
       saveDataLocally();
       renderPublicPortfolio();
       renderAdminEducationTable();
-      showToast('Education record removed from portfolio & resume.', 'success');
+      showToast('Education record removed & resume synced.', 'success');
       autoSyncToGitHub();
     }
 
@@ -3950,7 +3941,7 @@
       if (editingSkillId) {
         const idx = appData.skills.findIndex(x => x.id === editingSkillId);
         if (idx !== -1) appData.skills[idx] = skillObj;
-        showToast('Skill & resume updated!', 'success');
+        showToast('Skill & Resume updated!', 'success');
       } else {
         appData.skills.unshift(skillObj);
         showToast('Skill added to portfolio & resume!', 'success');
@@ -3968,7 +3959,7 @@
       saveDataLocally();
       renderPublicPortfolio();
       renderAdminSkillsTable();
-      showToast('Skill removed from portfolio & resume.', 'success');
+      showToast('Skill deleted & resume synced.', 'success');
       autoSyncToGitHub();
     }
 
@@ -4060,6 +4051,7 @@
 
       const newSalt = generateRandomHex(16);
       const newHash = await hashWithSSHKeyDerivation(`${newU}:${newP}`, newSalt);
+
       appData.auth = {
         username: newU,
         ssh_salt: newSalt,
@@ -4068,8 +4060,10 @@
         cipher: "SSH-v2 / PBKDF2-HMAC-SHA256 (100,000 rounds)",
         security_level: "SSH-Grade Zero-Plaintext Storage"
       };
+
       localStorage.setItem('naushifa_custom_username', newU);
       saveDataLocally();
+
       document.getElementById('adminUsernameDisplay').textContent = newU;
       updateSshBadgeDisplay();
       showToast('Username & password updated securely with SSH-grade encryption!', 'success');
@@ -4101,7 +4095,7 @@
         badge.style.background = 'rgba(46, 160, 67, 0.2)';
         badge.style.color = '#2ea043';
       } else if (token.startsWith('ghp_')) {
-        badge.textContent = '⚠️ Classic Token (Fine-Grained Recommended)';
+        badge.textContent = '⚠ Classic Token (Fine-Grained Recommended)';
         badge.style.background = 'rgba(210, 153, 34, 0.2)';
         badge.style.color = '#d29922';
       } else {
@@ -4111,11 +4105,26 @@
       }
     }
 
+    function normalizeRepoInput(raw) {
+      return (raw || '')
+        .trim()
+        .replace(/^https?:\/\/(www\.)?github\.com\//i, '')
+        .replace(/\.git$/i, '')
+        .replace(/^\/+|\/+$/g, '');
+    }
+
+    function sanitizeToken(raw) {
+      return (raw || '').replace(/[^\x21-\x7E]/g, '').trim();
+    }
+
     function saveGitHubSettings() {
-      const repo = document.getElementById('ghRepo').value.trim();
+      const repo = normalizeRepoInput(document.getElementById('ghRepo').value);
       const branch = document.getElementById('ghBranch').value.trim() || 'main';
-      const path = document.getElementById('ghPath').value.trim() || 'portfolio.json';
-      const token = document.getElementById('ghToken').value.trim();
+      const path = document.getElementById('ghPath').value.trim().replace(/^\/+/, '') || 'portfolio.json';
+      const token = sanitizeToken(document.getElementById('ghToken').value);
+
+      document.getElementById('ghRepo').value = repo;
+      document.getElementById('ghToken').value = token;
 
       localStorage.setItem('gh_repo', repo);
       localStorage.setItem('gh_branch', branch);
@@ -4146,18 +4155,22 @@
       }
     }
 
-    async function pushToGitHub() {
+    async function pushToGitHub(isRetry = false) {
       saveGitHubSettings();
       const repo = localStorage.getItem('gh_repo');
       const branch = localStorage.getItem('gh_branch') || 'main';
       const path = localStorage.getItem('gh_path') || 'portfolio.json';
-      const token = localStorage.getItem('gh_token');
+      const token = sanitizeToken(localStorage.getItem('gh_token'));
 
-      if (!repo || !token) {
-        showToast('Please enter your GitHub Repo and Fine-Grained Token in the GitHub Cloud Sync tab.', 'error');
+      if (!repo || !repo.includes('/') || !token) {
+        showToast('Please enter a valid GitHub Repo (owner/repo) and Fine-Grained Token in the GitHub Cloud Sync tab.', 'error');
         return;
       }
-      showToast('Publishing changes to GitHub via Fine-Grained Token...', 'info');
+
+      if (!isRetry) {
+        showToast('Publishing changes to GitHub via Fine-Grained Token...', 'info');
+      }
+
       try {
         const headers = {
           'Accept': 'application/vnd.github+json',
@@ -4165,17 +4178,30 @@
           'Content-Type': 'application/json'
         };
 
+        const encodedPath = path.split('/').map(encodeURIComponent).join('/');
+        const apiUrl = `https://api.github.com/repos/${repo}/contents/${encodedPath}`;
         let sha = null;
-        try {
-          const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}`, { headers });
-          if (getRes.ok) {
-            const data = await getRes.json();
-            sha = data.sha;
-          }
-        } catch (e) {}
+
+        // Fetch latest SHA without browser caching
+        const getRes = await fetch(`${apiUrl}?ref=${encodeURIComponent(branch)}&_=${Date.now()}`, {
+          headers,
+          cache: 'no-store'
+        });
+        if (getRes.ok) {
+          const data = await getRes.json();
+          sha = data.sha;
+        } else if (getRes.status !== 404) {
+          const errInfo = await getRes.json().catch(() => ({}));
+          showToast(`GitHub read failed (${getRes.status}): ${errInfo.message || getRes.statusText}`, 'error');
+          return;
+        }
 
         const contentStr = JSON.stringify(appData, null, 2);
-        const encodedContent = btoa(unescape(encodeURIComponent(contentStr)));
+        const bytes = new TextEncoder().encode(contentStr);
+        let binary = '';
+        for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+        const encodedContent = btoa(binary);
+
         const payload = {
           message: `Update portfolio details via Admin Portal [${new Date().toISOString()}]`,
           content: encodedContent,
@@ -4183,20 +4209,26 @@
         };
         if (sha) payload.sha = sha;
 
-        const putRes = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+        const putRes = await fetch(apiUrl, {
           method: 'PUT',
           headers: headers,
           body: JSON.stringify(payload)
         });
 
+        // Automatically re-fetch latest SHA and retry once if a 409 SHA conflict occurs
+        if (putRes.status === 409 && !isRetry) {
+          return await pushToGitHub(true);
+        }
+
         if (putRes.ok) {
           showToast('✅ Changes published to GitHub! Live for the whole world!', 'success');
         } else {
-          const errData = await putRes.json();
-          showToast(`GitHub commit error: ${errData.message || putRes.statusText}`, 'error');
+          const errData = await putRes.json().catch(() => ({}));
+          showToast(`GitHub commit error (${putRes.status}): ${errData.message || putRes.statusText}`, 'error');
         }
       } catch (err) {
-        showToast('Network error while publishing to GitHub.', 'error');
+        console.error('GitHub Sync Error:', err);
+        showToast(`GitHub Sync failed: ${err.message || 'Network error while publishing to GitHub.'}`, 'error');
       }
     }
 
@@ -4221,7 +4253,7 @@
           saveDataLocally();
           renderPublicPortfolio();
           renderAdminWorkspace();
-          showToast('Loaded latest portfolio from GitHub!', 'success');
+          showToast('Loaded latest portfolio & resume from GitHub!', 'success');
         } else {
           showToast(`Failed to pull from GitHub (${res.status}).`, 'error');
         }
@@ -4257,7 +4289,7 @@
       if (!container) return;
       const toast = document.createElement('div');
       toast.className = `admin-toast ${type}`;
-      toast.innerHTML = `<span>${type === 'success' ? '✓' : 'ℹ️'}</span> <div>${escapeHTML(message)}</div>`;
+      toast.innerHTML = `<span>${type === 'success' ? '✓' : '⚠'}</span> <div>${escapeHTML(message)}</div>`;
       container.appendChild(toast);
       setTimeout(() => {
         toast.style.opacity = '0';
