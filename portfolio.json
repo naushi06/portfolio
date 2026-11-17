@@ -236,19 +236,6 @@
   ],
   "projects": [
     {
-      "id": 3,
-      "title": "Industrial Telemetry & Equipment Health Monitor",
-      "description": "Edge IoT telemetry unit for predictive vibration and temperature anomaly detection on electric machinery.",
-      "long_description": "Designed and prototyped during firmware internship at Genzee Technologies. Interfaces multi-axis accelerometer and thermal sensors via high-speed I2C bus with alert threshold interrupts.",
-      "category": "Embedded & IoT",
-      "tags": "ESP32, I2C Telemetry, Arduino IDE, IoT Cloud",
-      "image_url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' width='400' height='240'><rect width='400' height='240' fill='%230f172a'/><rect x='110' y='55' width='180' height='130' rx='12' fill='%231e293b' stroke='%2310b981' stroke-width='2'/><text x='200' y='110' fill='%2310b981' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>INDUSTRIAL TELEMETRY</text><text x='200' y='135' fill='%2394a3b8' font-family='monospace' font-size='12' text-anchor='middle'>I2C Vibration & Temp</text></svg>",
-      "github_url": "https://github.com/naushifa-rasheed/industrial-health-monitor",
-      "demo_url": "https://github.com/naushifa-rasheed/industrial-health-monitor",
-      "featured": 1,
-      "display_order": 3
-    },
-    {
       "id": 4,
       "title": "IEEE SB CEK Technical Communications Portal",
       "description": "Interactive community hub for IEEE SB CE Kallooppara students to register for workshops, access seminar resources, and coordinate branch activities.",
